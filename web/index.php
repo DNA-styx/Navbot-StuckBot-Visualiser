@@ -1,26 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DoD Log Map & Bot Locations KeyValues</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 2em; }
-        textarea { width: 100%; height: 300px; }
-        pre { background: #f4f4f4; padding: 1em; white-space: pre-wrap; }
-        button { padding: 0.5em 1em; font-size: 1em; }
-    </style>
-</head>
-<body>
-    <h1>DoD Log Map & Bot Locations KeyValues</h1>
-    <form method="post">
-        <label for="logText">Paste your log here:</label><br>
-        <textarea id="logText" name="logText"><?php echo isset($_POST['logText']) ? htmlspecialchars($_POST['logText']) : ''; ?></textarea><br><br>
-        <button type="submit" name="analyze">Analyze</button>
-        <?php if (!empty($_POST['logText'])): ?>
-            <button type="submit" name="download">Download KeyValues</button>
-        <?php endif; ?>
-    </form>
-
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
     $logText = $_POST['logText'];
@@ -28,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
 
     $output = [];
     $currentMap = '';
-    $mapKnown = false; // Only true after seeing [SM] Changed map to
+    $mapKnown = false;
 
     foreach ($lines as $line) {
         $line = trim($line);
@@ -42,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
 
         // Server start / NavBot initialization messages
         if (preg_match('/\[NavBot\] (CBasePlayer::PlayerRunCommand hook enabled|Loaded bot difficulty profiles|Extension fully loaded|Registered \d+ natives)\./', $line)) {
-            $mapKnown = false; // ignore stuck messages until next map change
+            $mapKnown = false;
             continue;
         }
 
@@ -69,15 +46,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
     }
     $kvContent .= "}\n";
 
-    // Download file if requested
+    // If user clicked download, send headers and output file **before any HTML**
     if (isset($_POST['download'])) {
         header('Content-Type: text/plain');
         header('Content-Disposition: attachment; filename="locations.txt"');
         echo $kvContent;
-        exit;
+        exit; // important to stop further HTML output
     }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbot StuckBot Visualiser</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        textarea { width: 100%; height: 300px; }
+        pre { background: #f4f4f4; padding: 1em; white-space: pre-wrap; }
+        button { padding: 0.5em 1em; font-size: 1em; }
+    </style>
+</head>
+<body>
+    <h1>Navbot StuckBot Visualiser</h1>
+    <form method="post">
+        <label for="logText">Paste your log here:</label><br>
+        <textarea id="logText" name="logText"><?php echo isset($_POST['logText']) ? htmlspecialchars($_POST['logText']) : ''; ?></textarea><br><br>
+        <button type="submit" name="analyze">Analyze</button>
+        <?php if (!empty($_POST['logText'])): ?>
+            <button type="submit" name="download">Download KeyValues</button>
+        <?php endif; ?>
+    </form>
 
-    // Otherwise, display on screen
+<?php
+// Display output on screen if not downloading
+if (!empty($kvContent)) {
     echo "<h2>KeyValues Output</h2><pre>" . htmlspecialchars($kvContent) . "</pre>";
 }
 ?>
