@@ -1,4 +1,9 @@
 <?php
+/*
+ * Navbot StuckBot Visualiser v1.0
+ * Parses DoD logs into KeyValues for stuck bots and allows download.
+ */
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
     $logText = $_POST['logText'];
     $lines = explode("\n", $logText);
@@ -59,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Navbot StuckBot Visualiser</title>
+    <title>Navbot StuckBot Visualiser v1.0</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 2em; }
         textarea { width: 100%; height: 300px; }
@@ -68,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
     </style>
 </head>
 <body>
-    <h1>Navbot StuckBot Visualiser</h1>
+    <h1>Navbot StuckBot Visualiser v1.0</h1>
     <form method="post">
         <label for="logText">Paste your log here:</label><br>
         <textarea id="logText" name="logText"><?php echo isset($_POST['logText']) ? htmlspecialchars($_POST['logText']) : ''; ?></textarea><br><br>
