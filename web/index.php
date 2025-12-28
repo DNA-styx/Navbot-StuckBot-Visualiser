@@ -7,6 +7,7 @@
         body { font-family: Arial, sans-serif; margin: 2em; }
         textarea { width: 100%; height: 300px; }
         pre { background: #f4f4f4; padding: 1em; white-space: pre-wrap; }
+        button { padding: 0.5em 1em; font-size: 1em; }
     </style>
 </head>
 <body>
@@ -14,7 +15,10 @@
     <form method="post">
         <label for="logText">Paste your log here:</label><br>
         <textarea id="logText" name="logText"><?php echo isset($_POST['logText']) ? htmlspecialchars($_POST['logText']) : ''; ?></textarea><br><br>
-        <button type="submit">Analyze</button>
+        <button type="submit" name="analyze">Analyze</button>
+        <?php if (!empty($_POST['logText'])): ?>
+            <button type="submit" name="download">Download KeyValues</button>
+        <?php endif; ?>
     </form>
 
 <?php
@@ -24,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
 
     $output = [];
     $currentMap = '';
+    $mapKnown = false; // Only true after seeing [SM] Changed map to
 
     foreach ($lines as $line) {
         $line = trim($line);
@@ -31,10 +36,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
         // Map change
         if (preg_match('/\[SM\] Changed map to "(.*)"/', $line, $matches)) {
             $currentMap = $matches[1];
+            $mapKnown = true;
+            continue;
         }
 
-        // NavBot suicide with coordinates
-        if ($currentMap && preg_match('/\[NavBot\] Bot ".*" suicided due to being stuck for too long\. ([\-\d\.]+) ([\-\d\.]+) ([\-\d\.]+)/', $line, $matches)) {
+        // Server start / NavBot initialization messages
+        if (preg_match('/\[NavBot\] (CBasePlayer::PlayerRunCommand hook enabled|Loaded bot difficulty profiles|Extension fully loaded|Registered \d+ natives)\./', $line)) {
+            $mapKnown = false; // ignore stuck messages until next map change
+            continue;
+        }
+
+        // NavBot suicide with coordinates, only if we know the map
+        if ($mapKnown && preg_match('/\[NavBot\] Bot ".*" suicided due to being stuck for too long\. ([\-\d\.]+) ([\-\d\.]+) ([\-\d\.]+)/', $line, $matches)) {
             $output[] = [
                 'map' => $currentMap,
                 'x' => $matches[1],
@@ -44,19 +57,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['logText'])) {
         }
     }
 
-    // Output as KeyValues
-    echo "<h2>KeyValues Output</h2><pre>";
-    echo "\"StuckBots\"\n{\n";
+    // Prepare KeyValues content
+    $kvContent = "\"StuckBots\"\n{\n";
     foreach ($output as $index => $bot) {
-        echo "    \"$index\"\n    {\n";
-        echo "        \"map\"        \"" . $bot['map'] . "\"\n";
-        echo "        \"x\"          \"" . $bot['x'] . "\"\n";
-        echo "        \"y\"          \"" . $bot['y'] . "\"\n";
-        echo "        \"z\"          \"" . $bot['z'] . "\"\n";
-        echo "    }\n";
+        $kvContent .= "    \"$index\"\n    {\n";
+        $kvContent .= "        \"map\"        \"" . $bot['map'] . "\"\n";
+        $kvContent .= "        \"x\"          \"" . $bot['x'] . "\"\n";
+        $kvContent .= "        \"y\"          \"" . $bot['y'] . "\"\n";
+        $kvContent .= "        \"z\"          \"" . $bot['z'] . "\"\n";
+        $kvContent .= "    }\n";
     }
-    echo "}\n";
-    echo "</pre>";
+    $kvContent .= "}\n";
+
+    // Download file if requested
+    if (isset($_POST['download'])) {
+        header('Content-Type: text/plain');
+        header('Content-Disposition: attachment; filename="locations.txt"');
+        echo $kvContent;
+        exit;
+    }
+
+    // Otherwise, display on screen
+    echo "<h2>KeyValues Output</h2><pre>" . htmlspecialchars($kvContent) . "</pre>";
 }
 ?>
 </body>
