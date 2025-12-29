@@ -50,6 +50,4 @@ Images
 
 <img width="863" height="729" alt="image" src="https://github.com/user-attachments/assets/42e7f269-18ad-4012-85b3-0a8924240757" />
 
-<img width="951" height="757" alt="image" src="https://github.com/user-attachments/assets/23ee69b3-b95f-45bb-9e1a-a43591a21d3c" />
-
 <img width="1103" height="700" alt="image" src="https://github.com/user-attachments/assets/24280591-0b79-4960-9a55-9098ad63085e" />
