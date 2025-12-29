@@ -2,7 +2,7 @@
 
 HTML script and SourceMod Plugin to parse SourceMod logs for Navbot 'stuckbot' events, aggregate into one file and display them in game to assist with fixing non-optional waypointing.
 
-Vibed together over the course of a day with LLMs, more a usable proof of concept.
+Vibed together over the course of a day with LLMs, more a usable proof of concept. Tested with up to 18 logs, 1800 stuck events and 16 maps.
 
 Requirements/Created with:
 - Day of Defeat:Source server running NavBot and Mapchooser/Mapchooser Extended
@@ -19,7 +19,8 @@ Steps:
 - Use ``NOCLIP`` to go to the location, or use ``setpos X Y Z`` along with the coordinates from the console
 
 Notes:
-- 'Unknown_Map' is normally the map that your server starts with. SourceMod/Mapchooser doesn't write that to the log file, so the parser looks for logs that indicate a server restart, and ignores any 'stuckbot' events until the next confirmed map change log entry.
+- 'Unknown_Map' is normally the map that your server starts with. SourceMod/Mapchooser doesn't write that to the log file, so the parser looks for logs that indicate a server restart, and ignores any 'stuckbot' events until the next confirmed map change log entry
+- Server only loads the first 256 locations
 
 To-do:
 - Test compatibility with other games/maps
