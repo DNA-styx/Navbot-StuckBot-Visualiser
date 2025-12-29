@@ -1,0 +1,1692 @@
+L 12/27/2025 - 00:00:00: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 00:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:01:27: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 00:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:12:21: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. 2325.5 1914.99 834.031
+L 12/27/2025 - 00:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:25:59: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. 3069.99 -225.935 699.308
+L 12/27/2025 - 00:28:43: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 00:29:53: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 00:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:33:11: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 00:33:12: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 00:33:13: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 00:33:13: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 00:33:15: [NavBot] Adding NavBot to the game. #2<0x8afb248>
+L 12/27/2025 - 00:33:15: [NavBot] NavBot added to the game.
+L 12/27/2025 - 00:33:17: [NavBot] Adding NavBot to the game. #3<0x8afb25c>
+L 12/27/2025 - 00:33:17: [NavBot] NavBot added to the game.
+L 12/27/2025 - 00:33:19: [NavBot] Adding NavBot to the game. #5<0x8afb284>
+L 12/27/2025 - 00:33:19: [NavBot] NavBot added to the game.
+L 12/27/2025 - 00:33:21: [NavBot] Adding NavBot to the game. #6<0x8afb298>
+L 12/27/2025 - 00:33:21: [NavBot] NavBot added to the game.
+L 12/27/2025 - 00:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:39:05: [NavBot] Bot "[Spy]DuÅ¡anPopov" suicided due to being stuck for too long. 3637.87 3074.14 521.031
+L 12/27/2025 - 00:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:50:42: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. 3580 3081.25 729.45
+L 12/27/2025 - 00:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 00:59:27: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. 2477.98 4408.07 453.292
+L 12/27/2025 - 00:59:44: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 00:59:51: [mapchooser_extended.smx] Voting for next map has finished. Nextmap: dod_omaha_v2.
+L 12/27/2025 - 01:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:04:25: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. 3604.29 3090.41 712
+L 12/27/2025 - 01:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:08:42: [SM] Changed map to "dod_omaha_v2"
+L 12/27/2025 - 01:08:43: -------- Mapchange to dod_omaha_v2 --------
+L 12/27/2025 - 01:08:44: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_omaha_v2.smnav".
+L 12/27/2025 - 01:08:44: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 01:08:46: [NavBot] Adding NavBot to the game. #2<0x8afb248>
+L 12/27/2025 - 01:08:46: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:08:48: [NavBot] Adding NavBot to the game. #3<0x8afb25c>
+L 12/27/2025 - 01:08:48: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:08:50: [NavBot] Adding NavBot to the game. #5<0x8afb284>
+L 12/27/2025 - 01:08:50: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:08:52: [NavBot] Adding NavBot to the game. #6<0x8afb298>
+L 12/27/2025 - 01:08:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:14:24: [NavBot] Bot "[Spy]DuÅ¡anPopov" suicided due to being stuck for too long. 4838.48 6690.03 264.031
+L 12/27/2025 - 01:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:24:05: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 01:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:27:51: [SM] Changed map to "dod_kraps"
+L 12/27/2025 - 01:27:53: -------- Mapchange to dod_kraps --------
+L 12/27/2025 - 01:27:53: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_kraps.smnav".
+L 12/27/2025 - 01:27:53: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 01:27:55: [NavBot] Adding NavBot to the game. #2<0x8afb248>
+L 12/27/2025 - 01:27:55: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:27:57: [NavBot] Adding NavBot to the game. #3<0x8afb25c>
+L 12/27/2025 - 01:27:57: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:27:59: [NavBot] Adding NavBot to the game. #5<0x8afb284>
+L 12/27/2025 - 01:27:59: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:28:01: [NavBot] Adding NavBot to the game. #6<0x8afb298>
+L 12/27/2025 - 01:28:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:28:03: [NavBot] Adding NavBot to the game. #1<0x8afb234>
+L 12/27/2025 - 01:28:03: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:28:05: [NavBot] Adding NavBot to the game. #3<0x8afb25c>
+L 12/27/2025 - 01:28:05: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:28:07: [NavBot] Adding NavBot to the game. #5<0x8afb284>
+L 12/27/2025 - 01:28:07: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:28:09: [NavBot] Adding NavBot to the game. #7<0x8afb2ac>
+L 12/27/2025 - 01:28:09: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:28:13: [NavBot] Adding NavBot to the game. #1<0x8afb234>
+L 12/27/2025 - 01:28:13: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:28:15: [NavBot] Adding NavBot to the game. #3<0x8afb25c>
+L 12/27/2025 - 01:28:15: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:28:17: [NavBot] Adding NavBot to the game. #4<0x8afb270>
+L 12/27/2025 - 01:28:17: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:28:19: [NavBot] Adding NavBot to the game. #6<0x8afb298>
+L 12/27/2025 - 01:28:19: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:32:46: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. -1734.3 272.809 63.6154
+L 12/27/2025 - 01:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:36:35: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 01:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:41:49: [SM] Changed map to "dod_strand"
+L 12/27/2025 - 01:41:51: -------- Mapchange to dod_strand --------
+L 12/27/2025 - 01:41:51: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_strand.smnav".
+L 12/27/2025 - 01:41:51: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 01:41:53: [NavBot] Adding NavBot to the game. #2<0x8afb248>
+L 12/27/2025 - 01:41:53: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:41:55: [NavBot] Adding NavBot to the game. #3<0x8afb25c>
+L 12/27/2025 - 01:41:55: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:41:57: [NavBot] Adding NavBot to the game. #5<0x8afb284>
+L 12/27/2025 - 01:41:57: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:41:59: [NavBot] Adding NavBot to the game. #6<0x8afb298>
+L 12/27/2025 - 01:41:59: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:43:29: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 01:43:29: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 01:43:29: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 01:43:29: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 01:43:29: [NavBot] Registered 34 natives.
+L 12/27/2025 - 01:43:30: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 01:43:30: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 01:43:32: [NavBot] Adding NavBot to the game. #1<0x95910e4>
+L 12/27/2025 - 01:43:32: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:43:34: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 01:43:34: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:43:36: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 01:43:36: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:43:37: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 01:43:38: [NavBot] Adding NavBot to the game. #4<0x9591120>
+L 12/27/2025 - 01:43:38: [NavBot] NavBot added to the game.
+L 12/27/2025 - 01:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 01:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:12:33: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 02:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:15:44: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 02:19:01: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 02:19:03: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 02:19:03: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 02:19:03: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 02:19:05: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 02:19:05: [NavBot] NavBot added to the game.
+L 12/27/2025 - 02:19:07: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 02:19:07: [NavBot] NavBot added to the game.
+L 12/27/2025 - 02:19:09: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 02:19:09: [NavBot] NavBot added to the game.
+L 12/27/2025 - 02:19:11: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 02:19:11: [NavBot] NavBot added to the game.
+L 12/27/2025 - 02:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:48:34: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 02:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 02:51:17: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 02:54:33: [SM] Changed map to "dod_beachlanding_tdf"
+L 12/27/2025 - 02:54:34: -------- Mapchange to dod_beachlanding_tdf --------
+L 12/27/2025 - 02:54:34: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_beachlanding_tdf.smnav".
+L 12/27/2025 - 02:54:34: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 02:54:36: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 02:54:36: [NavBot] NavBot added to the game.
+L 12/27/2025 - 02:54:38: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 02:54:38: [NavBot] NavBot added to the game.
+L 12/27/2025 - 02:54:40: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 02:54:40: [NavBot] NavBot added to the game.
+L 12/27/2025 - 02:54:42: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 02:54:42: [NavBot] NavBot added to the game.
+L 12/27/2025 - 02:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:03:00: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. -969.429 1472.93 -1656.99
+L 12/27/2025 - 03:04:23: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. -1070.68 1482.17 -1657.98
+L 12/27/2025 - 03:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:06:15: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 03:08:35: [NavBot] Bot "[Spy]JohnHamilton" suicided due to being stuck for too long. 2724.03 1319.09 -1476.82
+L 12/27/2025 - 03:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:11:23: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. 2724.03 1300.38 -1505.7
+L 12/27/2025 - 03:12:28: [NavBot] Bot "[Spy]JohnHamilton" suicided due to being stuck for too long. -1029.52 1478.96 -1657.03
+L 12/27/2025 - 03:14:49: [SM] Changed map to "dod_kraps"
+L 12/27/2025 - 03:14:51: -------- Mapchange to dod_kraps --------
+L 12/27/2025 - 03:14:51: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_kraps.smnav".
+L 12/27/2025 - 03:14:51: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 03:14:53: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 03:14:53: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:14:55: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 03:14:55: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:14:57: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 03:14:57: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:14:59: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 03:14:59: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:18:51: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. -410.818 414.589 -212.325
+L 12/27/2025 - 03:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:20:52: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 03:22:38: [SM] Changed map to "dod_strand"
+L 12/27/2025 - 03:22:40: -------- Mapchange to dod_strand --------
+L 12/27/2025 - 03:22:41: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_strand.smnav".
+L 12/27/2025 - 03:22:41: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 03:22:43: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 03:22:43: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:22:45: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 03:22:45: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:22:47: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 03:22:47: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:22:49: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 03:22:49: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:35:31: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 03:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:45:12: [SM] Changed map to "dod_6_june_1944_rc1"
+L 12/27/2025 - 03:45:14: -------- Mapchange to dod_6_june_1944_rc1 --------
+L 12/27/2025 - 03:45:14: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_6_june_1944_rc1.smnav".
+L 12/27/2025 - 03:45:14: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 03:45:16: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 03:45:16: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:45:18: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 03:45:18: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:45:20: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 03:45:20: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:45:22: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 03:45:22: [NavBot] NavBot added to the game.
+L 12/27/2025 - 03:49:07: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. -577.031 -1688.97 371.174
+L 12/27/2025 - 03:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 03:52:21: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 03:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:11:45: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. -577.031 -1688.97 371.174
+L 12/27/2025 - 04:14:44: [SM] Changed map to "dod_dday_h"
+L 12/27/2025 - 04:14:45: -------- Mapchange to dod_dday_h --------
+L 12/27/2025 - 04:14:46: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 04:14:46: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 04:14:48: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 04:14:48: [NavBot] NavBot added to the game.
+L 12/27/2025 - 04:14:50: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 04:14:50: [NavBot] NavBot added to the game.
+L 12/27/2025 - 04:14:52: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 04:14:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 04:14:54: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 04:14:54: [NavBot] NavBot added to the game.
+L 12/27/2025 - 04:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:43:37: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 04:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:47:00: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 04:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 04:50:15: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 04:50:16: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 04:50:17: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 04:50:17: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 04:50:19: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 04:50:19: [NavBot] NavBot added to the game.
+L 12/27/2025 - 04:50:21: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 04:50:21: [NavBot] NavBot added to the game.
+L 12/27/2025 - 04:50:23: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 04:50:23: [NavBot] NavBot added to the game.
+L 12/27/2025 - 04:50:25: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 04:50:25: [NavBot] NavBot added to the game.
+L 12/27/2025 - 04:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:16:07: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. 2477.97 4408.08 453.292
+L 12/27/2025 - 05:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:21:18: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 05:22:31: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 05:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:25:46: [SM] Changed map to "dod_beachlanding_tdf"
+L 12/27/2025 - 05:25:47: -------- Mapchange to dod_beachlanding_tdf --------
+L 12/27/2025 - 05:25:48: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_beachlanding_tdf.smnav".
+L 12/27/2025 - 05:25:48: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 05:25:50: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 05:25:50: [NavBot] NavBot added to the game.
+L 12/27/2025 - 05:25:52: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 05:25:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 05:25:54: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 05:25:54: [NavBot] NavBot added to the game.
+L 12/27/2025 - 05:25:56: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 05:25:56: [NavBot] NavBot added to the game.
+L 12/27/2025 - 05:29:57: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. -1057.52 1481.77 -1656.99
+L 12/27/2025 - 05:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:30:29: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. -1006.1 1476.63 -1656.99
+L 12/27/2025 - 05:31:19: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. -1074.4 1483.46 -1657.03
+L 12/27/2025 - 05:31:21: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. -1015.14 1364.18 -1779.75
+L 12/27/2025 - 05:31:59: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. -976.56 2764 -767.071
+L 12/27/2025 - 05:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:43:01: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. 2739.98 1273.91 -1539.69
+L 12/27/2025 - 05:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:48:40: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. -1079.15 1483.95 -1656.98
+L 12/27/2025 - 05:49:39: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. 2724.03 1309.01 -1492.36
+L 12/27/2025 - 05:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:53:10: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. 2724.03 1323.89 -1469.4
+L 12/27/2025 - 05:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 05:58:02: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 06:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:01:17: [SM] Changed map to "dod_kraps"
+L 12/27/2025 - 06:01:19: -------- Mapchange to dod_kraps --------
+L 12/27/2025 - 06:01:19: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_kraps.smnav".
+L 12/27/2025 - 06:01:19: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 06:01:21: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 06:01:21: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:01:23: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 06:01:23: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:01:25: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 06:01:25: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:01:27: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 06:01:27: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:06:17: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 06:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:11:41: [SM] Changed map to "dod_strand"
+L 12/27/2025 - 06:11:43: -------- Mapchange to dod_strand --------
+L 12/27/2025 - 06:11:44: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_strand.smnav".
+L 12/27/2025 - 06:11:44: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 06:11:46: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 06:11:46: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:11:48: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 06:11:48: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:11:50: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 06:11:50: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:11:52: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 06:11:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:26:38: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 06:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:33:44: [SM] Changed map to "dod_6_june_1944_rc1"
+L 12/27/2025 - 06:33:46: -------- Mapchange to dod_6_june_1944_rc1 --------
+L 12/27/2025 - 06:33:46: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_6_june_1944_rc1.smnav".
+L 12/27/2025 - 06:33:46: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 06:33:48: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 06:33:48: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:33:50: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 06:33:50: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:33:52: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 06:33:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:33:54: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 06:33:54: [NavBot] NavBot added to the game.
+L 12/27/2025 - 06:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:40:20: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. -577.031 -1688.97 371.174
+L 12/27/2025 - 06:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:50:57: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. -577.031 -1688.97 371.174
+L 12/27/2025 - 06:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 06:56:22: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 07:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:03:29: [SM] Changed map to "dod_dday_h"
+L 12/27/2025 - 07:03:31: -------- Mapchange to dod_dday_h --------
+L 12/27/2025 - 07:03:31: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 07:03:31: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 07:03:33: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 07:03:33: [NavBot] NavBot added to the game.
+L 12/27/2025 - 07:03:35: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 07:03:35: [NavBot] NavBot added to the game.
+L 12/27/2025 - 07:03:37: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 07:03:37: [NavBot] NavBot added to the game.
+L 12/27/2025 - 07:03:39: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 07:03:39: [NavBot] NavBot added to the game.
+L 12/27/2025 - 07:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:33:22: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 07:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:35:45: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 07:39:01: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 07:39:02: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 07:39:02: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 07:39:02: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 07:39:04: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 07:39:04: [NavBot] NavBot added to the game.
+L 12/27/2025 - 07:39:06: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 07:39:06: [NavBot] NavBot added to the game.
+L 12/27/2025 - 07:39:08: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 07:39:08: [NavBot] NavBot added to the game.
+L 12/27/2025 - 07:39:10: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 07:39:10: [NavBot] NavBot added to the game.
+L 12/27/2025 - 07:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:42:42: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. 3589.04 3058.97 521.031
+L 12/27/2025 - 07:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 07:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:01:13: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 08:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:11:16: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 08:12:29: [SM] Changed map to "dod_beachlanding_tdf"
+L 12/27/2025 - 08:12:30: -------- Mapchange to dod_beachlanding_tdf --------
+L 12/27/2025 - 08:12:31: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_beachlanding_tdf.smnav".
+L 12/27/2025 - 08:12:31: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 08:12:33: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 08:12:33: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:12:35: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 08:12:35: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:12:37: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 08:12:37: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:12:39: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 08:12:39: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:20:28: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. -1020.41 1478 -1657.02
+L 12/27/2025 - 08:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:30:52: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. -3806.9 1654.49 -1079.97
+L 12/27/2025 - 08:32:10: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. -1036.8 1479.69 -1657.01
+L 12/27/2025 - 08:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:44:35: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 08:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:48:00: [SM] Changed map to "dod_kraps"
+L 12/27/2025 - 08:48:02: -------- Mapchange to dod_kraps --------
+L 12/27/2025 - 08:48:02: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_kraps.smnav".
+L 12/27/2025 - 08:48:02: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 08:48:04: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 08:48:04: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:48:06: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 08:48:06: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:48:08: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 08:48:08: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:48:10: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 08:48:10: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:54:15: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 08:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 08:56:35: [SM] Changed map to "dod_strand"
+L 12/27/2025 - 08:56:37: -------- Mapchange to dod_strand --------
+L 12/27/2025 - 08:56:37: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_strand.smnav".
+L 12/27/2025 - 08:56:37: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 08:56:39: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 08:56:39: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:56:41: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 08:56:41: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:56:43: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 08:56:43: [NavBot] NavBot added to the game.
+L 12/27/2025 - 08:56:45: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 08:56:45: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:11:00: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 09:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:18:08: [SM] Changed map to "dod_6_june_1944_rc1"
+L 12/27/2025 - 09:18:09: -------- Mapchange to dod_6_june_1944_rc1 --------
+L 12/27/2025 - 09:18:09: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_6_june_1944_rc1.smnav".
+L 12/27/2025 - 09:18:10: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 09:18:12: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 09:18:12: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:18:14: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 09:18:14: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:18:16: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 09:18:16: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:18:18: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 09:18:18: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:25:36: [NavBot] Bot "[Spy]JuanPujolGarcÃ­a" suicided due to being stuck for too long. -577.031 -1688.97 371.174
+L 12/27/2025 - 09:27:21: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 09:27:36: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 09:27:36: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:27:38: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 09:27:38: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:27:40: [NavBot] Adding NavBot to the game. #4<0x9591120>
+L 12/27/2025 - 09:27:40: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:27:42: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 09:27:42: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:33:27: [SM] Changed map to "dod_dday_h"
+L 12/27/2025 - 09:33:28: -------- Mapchange to dod_dday_h --------
+L 12/27/2025 - 09:33:29: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 09:33:29: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 09:33:31: [NavBot] Adding NavBot to the game. #2<0x95910f8>
+L 12/27/2025 - 09:33:31: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:33:33: [NavBot] Adding NavBot to the game. #3<0x959110c>
+L 12/27/2025 - 09:33:33: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:33:35: [NavBot] Adding NavBot to the game. #5<0x9591134>
+L 12/27/2025 - 09:33:35: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:33:37: [NavBot] Adding NavBot to the game. #6<0x9591148>
+L 12/27/2025 - 09:33:37: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:37:10: [NavBot] Bot "[Spy]HaroldCole" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 09:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:42:51: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 09:42:51: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 09:42:51: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 09:42:51: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 09:42:51: [NavBot] Registered 34 natives.
+L 12/27/2025 - 09:42:52: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 09:42:52: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 09:42:54: [NavBot] Adding NavBot to the game. #1<0x8c14fb4>
+L 12/27/2025 - 09:42:54: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:42:56: [NavBot] Adding NavBot to the game. #2<0x8c14fc8>
+L 12/27/2025 - 09:42:56: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:42:58: [NavBot] Adding NavBot to the game. #3<0x8c14fdc>
+L 12/27/2025 - 09:42:58: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:42:59: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 09:43:00: [NavBot] Adding NavBot to the game. #4<0x8c14ff0>
+L 12/27/2025 - 09:43:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 09:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:46:29: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. 2325.16 1909.45 834.031
+L 12/27/2025 - 09:47:52: [NavBot] Bot "[Spy]MoeBerg" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 09:49:34: [NavBot] Bot "[Spy]MoeBerg" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 09:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 09:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:11:55: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 10:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:15:06: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 10:16:31: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. 3069.99 -225.677 699.308
+L 12/27/2025 - 10:16:58: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. 2325.47 1914.5 834.031
+L 12/27/2025 - 10:18:24: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 10:18:25: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 10:18:25: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 10:18:25: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 10:18:27: [NavBot] Adding NavBot to the game. #2<0x8c14fc8>
+L 12/27/2025 - 10:18:27: [NavBot] NavBot added to the game.
+L 12/27/2025 - 10:18:29: [NavBot] Adding NavBot to the game. #3<0x8c14fdc>
+L 12/27/2025 - 10:18:29: [NavBot] NavBot added to the game.
+L 12/27/2025 - 10:18:31: [NavBot] Adding NavBot to the game. #5<0x8c15004>
+L 12/27/2025 - 10:18:31: [NavBot] NavBot added to the game.
+L 12/27/2025 - 10:18:33: [NavBot] Adding NavBot to the game. #6<0x8c15018>
+L 12/27/2025 - 10:18:33: [NavBot] NavBot added to the game.
+L 12/27/2025 - 10:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:24:58: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. 3595 3059.71 521.031
+L 12/27/2025 - 10:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:28:14: [NavBot] Bot "[Spy]JuanPujolGarcÃ­a" suicided due to being stuck for too long. 2477.97 4412 453.292
+L 12/27/2025 - 10:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:46:27: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 10:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 10:50:40: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 10:50:47: [NavBot] Bot "[Spy]JuanPujolGarcÃ­a" suicided due to being stuck for too long. 3637.06 3084.89 521.031
+L 12/27/2025 - 10:53:55: [SM] Changed map to "dod_beachlanding_tdf"
+L 12/27/2025 - 10:53:56: -------- Mapchange to dod_beachlanding_tdf --------
+L 12/27/2025 - 10:53:56: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_beachlanding_tdf.smnav".
+L 12/27/2025 - 10:53:56: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 10:53:58: [NavBot] Adding NavBot to the game. #2<0x8c14fc8>
+L 12/27/2025 - 10:53:58: [NavBot] NavBot added to the game.
+L 12/27/2025 - 10:54:00: [NavBot] Adding NavBot to the game. #3<0x8c14fdc>
+L 12/27/2025 - 10:54:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 10:54:02: [NavBot] Adding NavBot to the game. #5<0x8c15004>
+L 12/27/2025 - 10:54:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 10:54:04: [NavBot] Adding NavBot to the game. #6<0x8c15018>
+L 12/27/2025 - 10:54:04: [NavBot] NavBot added to the game.
+L 12/27/2025 - 10:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:03:13: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. 2724.03 1299.45 -1507.12
+L 12/27/2025 - 11:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:05:11: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. -976.927 1473.68 -1656.99
+L 12/27/2025 - 11:06:29: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. -952.985 1290.42 -1940.75
+L 12/27/2025 - 11:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:18:05: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. 2724.03 1346.17 -1435.03
+L 12/27/2025 - 11:19:17: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. 1084.9 1529.38 -1877.58
+L 12/27/2025 - 11:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:20:16: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. 2724.01 1373.91 -1388.4
+L 12/27/2025 - 11:23:24: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 11:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:26:11: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 11:29:26: [SM] Changed map to "dod_kraps"
+L 12/27/2025 - 11:29:28: -------- Mapchange to dod_kraps --------
+L 12/27/2025 - 11:29:28: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_kraps.smnav".
+L 12/27/2025 - 11:29:28: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 11:29:30: [NavBot] Adding NavBot to the game. #2<0x8c14fc8>
+L 12/27/2025 - 11:29:30: [NavBot] NavBot added to the game.
+L 12/27/2025 - 11:29:32: [NavBot] Adding NavBot to the game. #3<0x8c14fdc>
+L 12/27/2025 - 11:29:32: [NavBot] NavBot added to the game.
+L 12/27/2025 - 11:29:34: [NavBot] Adding NavBot to the game. #5<0x8c15004>
+L 12/27/2025 - 11:29:34: [NavBot] NavBot added to the game.
+L 12/27/2025 - 11:29:36: [NavBot] Adding NavBot to the game. #6<0x8c15018>
+L 12/27/2025 - 11:29:36: [NavBot] NavBot added to the game.
+L 12/27/2025 - 11:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:34:52: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 11:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:38:12: [SM] Changed map to "dod_strand"
+L 12/27/2025 - 11:38:13: -------- Mapchange to dod_strand --------
+L 12/27/2025 - 11:38:14: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_strand.smnav".
+L 12/27/2025 - 11:38:14: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 11:38:16: [NavBot] Adding NavBot to the game. #2<0x8c14fc8>
+L 12/27/2025 - 11:38:16: [NavBot] NavBot added to the game.
+L 12/27/2025 - 11:38:18: [NavBot] Adding NavBot to the game. #3<0x8c14fdc>
+L 12/27/2025 - 11:38:18: [NavBot] NavBot added to the game.
+L 12/27/2025 - 11:38:20: [NavBot] Adding NavBot to the game. #5<0x8c15004>
+L 12/27/2025 - 11:38:20: [NavBot] NavBot added to the game.
+L 12/27/2025 - 11:38:22: [NavBot] Adding NavBot to the game. #6<0x8c15018>
+L 12/27/2025 - 11:38:22: [NavBot] NavBot added to the game.
+L 12/27/2025 - 11:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 11:57:18: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 12:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:08:42: [SM] Changed map to "dod_6_june_1944_rc1"
+L 12/27/2025 - 12:08:44: -------- Mapchange to dod_6_june_1944_rc1 --------
+L 12/27/2025 - 12:08:44: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_6_june_1944_rc1.smnav".
+L 12/27/2025 - 12:08:44: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 12:08:46: [NavBot] Adding NavBot to the game. #2<0x8c14fc8>
+L 12/27/2025 - 12:08:46: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:08:48: [NavBot] Adding NavBot to the game. #3<0x8c14fdc>
+L 12/27/2025 - 12:08:48: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:08:50: [NavBot] Adding NavBot to the game. #5<0x8c15004>
+L 12/27/2025 - 12:08:50: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:08:52: [NavBot] Adding NavBot to the game. #6<0x8c15018>
+L 12/27/2025 - 12:08:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:14:23: [sbpp_comms.smx] Received ungag command from web: steam STEAM_0:1:895687577
+L 12/27/2025 - 12:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:15:05: [sbpp_comms.smx] Received ungag command from web: steam STEAM_0:1:21857948
+L 12/27/2025 - 12:15:11: [sbpp_comms.smx] Received unmute command from web: steam STEAM_0:1:21857948
+L 12/27/2025 - 12:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:20:18: [NavBot] Adding NavBot to the game. #1<0x8c14fb4>
+L 12/27/2025 - 12:20:18: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:20:20: [NavBot] Adding NavBot to the game. #3<0x8c14fdc>
+L 12/27/2025 - 12:20:20: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:20:22: [NavBot] Adding NavBot to the game. #4<0x8c14ff0>
+L 12/27/2025 - 12:20:22: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:20:24: [NavBot] Adding NavBot to the game. #5<0x8c15004>
+L 12/27/2025 - 12:20:24: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:29:15: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 12:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:33:38: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. -577.031 -1688.97 371.174
+L 12/27/2025 - 12:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:35:32: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 12:35:32: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 12:35:32: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 12:35:32: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 12:35:32: [NavBot] Registered 34 natives.
+L 12/27/2025 - 12:35:33: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 12:35:33: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 12:35:35: [NavBot] Adding NavBot to the game. #1<0x94300c4>
+L 12/27/2025 - 12:35:35: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:35:37: [NavBot] Adding NavBot to the game. #2<0x94300d8>
+L 12/27/2025 - 12:35:37: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:35:39: [NavBot] Adding NavBot to the game. #3<0x94300ec>
+L 12/27/2025 - 12:35:39: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:35:40: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 12:35:41: [NavBot] Adding NavBot to the game. #4<0x9430100>
+L 12/27/2025 - 12:35:41: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 12:40:01: [NavBot] Adding NavBot to the game. #1<0x94300c4>
+L 12/27/2025 - 12:40:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:46:17: [NavBot] Adding NavBot to the game. #1<0x94300c4>
+L 12/27/2025 - 12:46:17: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:46:19: [NavBot] Adding NavBot to the game. #3<0x94300ec>
+L 12/27/2025 - 12:46:19: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:46:21: [NavBot] Adding NavBot to the game. #4<0x9430100>
+L 12/27/2025 - 12:46:21: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:46:23: [NavBot] Adding NavBot to the game. #6<0x9430128>
+L 12/27/2025 - 12:46:23: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 12:50:01: [NavBot] Adding NavBot to the game. #3<0x94300ec>
+L 12/27/2025 - 12:50:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 12:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 12:59:55: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 13:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 13:00:01: [NavBot] Adding NavBot to the game. #6<0x9430128>
+L 12/27/2025 - 13:00:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:01:32: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 13:01:32: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 13:01:32: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 13:01:32: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 13:01:32: [NavBot] Registered 34 natives.
+L 12/27/2025 - 13:01:33: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 13:01:33: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 13:01:35: [NavBot] Adding NavBot to the game. #1<0x9083364>
+L 12/27/2025 - 13:01:35: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:01:37: [NavBot] Adding NavBot to the game. #2<0x9083378>
+L 12/27/2025 - 13:01:37: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:01:39: [NavBot] Adding NavBot to the game. #3<0x908338c>
+L 12/27/2025 - 13:01:39: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:01:40: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 13:01:41: [NavBot] Adding NavBot to the game. #4<0x90833a0>
+L 12/27/2025 - 13:01:41: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:08:31: [NavBot] Bot "[Spy]Jeannie-deClarens" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 13:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 13:10:01: [NavBot] Adding NavBot to the game. #4<0x90833a0>
+L 12/27/2025 - 13:10:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:13:27: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 13:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 13:20:01: [NavBot] Adding NavBot to the game. #1<0x9083364>
+L 12/27/2025 - 13:20:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 13:30:01: [NavBot] Adding NavBot to the game. #4<0x90833a0>
+L 12/27/2025 - 13:30:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:32:36: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 13:33:47: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 13:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:37:05: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 13:37:06: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 13:37:06: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 13:37:06: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 13:37:08: [NavBot] Adding NavBot to the game. #2<0x9083378>
+L 12/27/2025 - 13:37:08: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:37:10: [NavBot] Adding NavBot to the game. #3<0x908338c>
+L 12/27/2025 - 13:37:10: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:37:12: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 13:37:12: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:37:14: [NavBot] Adding NavBot to the game. #6<0x90833c8>
+L 12/27/2025 - 13:37:14: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:39:02: [NavBot] Bot "[Spy]HaroldCole" suicided due to being stuck for too long. 3504.45 -467.292 469.406
+L 12/27/2025 - 13:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 13:40:00: [NavBot] Adding NavBot to the game. #2<0x9083378>
+L 12/27/2025 - 13:40:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 13:50:00: [NavBot] Adding NavBot to the game. #6<0x90833c8>
+L 12/27/2025 - 13:50:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 13:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 13:59:25: [NavBot] Bot "[Spy]HaroldCole" suicided due to being stuck for too long. 3595.01 3061.99 521.031
+L 12/27/2025 - 13:59:48: [NavBot] Bot "[Spy]MoeBerg" suicided due to being stuck for too long. 3642.97 3087.52 521.031
+L 12/27/2025 - 14:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 14:00:00: [NavBot] Adding NavBot to the game. #2<0x9083378>
+L 12/27/2025 - 14:00:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:00:02: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. 3595.01 3061.99 521.025
+L 12/27/2025 - 14:02:08: [NavBot] Bot "[Spy]JohnFord" suicided due to being stuck for too long. 3589.03 3058.97 521.031
+L 12/27/2025 - 14:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:05:08: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 14:09:21: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 14:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 14:10:00: [NavBot] Adding NavBot to the game. #6<0x90833c8>
+L 12/27/2025 - 14:10:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:12:36: [SM] Changed map to "dod_beachlanding_tdf"
+L 12/27/2025 - 14:12:37: -------- Mapchange to dod_beachlanding_tdf --------
+L 12/27/2025 - 14:12:37: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_beachlanding_tdf.smnav".
+L 12/27/2025 - 14:12:37: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 14:12:39: [NavBot] Adding NavBot to the game. #2<0x9083378>
+L 12/27/2025 - 14:12:39: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:12:41: [NavBot] Adding NavBot to the game. #3<0x908338c>
+L 12/27/2025 - 14:12:41: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:12:43: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 14:12:43: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:12:45: [NavBot] Adding NavBot to the game. #6<0x90833c8>
+L 12/27/2025 - 14:12:45: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:13:56: [NavBot] Bot "[Spy]MoeBerg" suicided due to being stuck for too long. -1035.66 1479.57 -1657.02
+L 12/27/2025 - 14:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 14:20:01: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 14:20:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 14:30:01: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 14:30:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:33:52: [NavBot] Bot "[Spy]EddieChapman" suicided due to being stuck for too long. -1025.9 1478.6 -1656.98
+L 12/27/2025 - 14:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 14:40:01: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 14:40:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:40:02: [NavBot] Bot "[Spy]MoeBerg" suicided due to being stuck for too long. 2724.01 1346.19 -1435.01
+L 12/27/2025 - 14:44:52: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 14:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:45:31: [NavBot] Bot "[Spy]JohnHamilton" suicided due to being stuck for too long. -986.862 1471.78 -1660.16
+L 12/27/2025 - 14:46:48: [NavBot] Bot "[Spy]JohnHamilton" suicided due to being stuck for too long. -1021.89 1478.19 -1657.02
+L 12/27/2025 - 14:48:07: [SM] Changed map to "dod_kraps"
+L 12/27/2025 - 14:48:09: -------- Mapchange to dod_kraps --------
+L 12/27/2025 - 14:48:09: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_kraps.smnav".
+L 12/27/2025 - 14:48:09: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 14:48:11: [NavBot] Adding NavBot to the game. #2<0x9083378>
+L 12/27/2025 - 14:48:11: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:48:13: [NavBot] Adding NavBot to the game. #3<0x908338c>
+L 12/27/2025 - 14:48:13: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:48:15: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 14:48:15: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:48:17: [NavBot] Adding NavBot to the game. #6<0x90833c8>
+L 12/27/2025 - 14:48:17: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 14:50:01: [NavBot] Adding NavBot to the game. #6<0x90833c8>
+L 12/27/2025 - 14:50:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 14:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 14:59:57: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 15:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 15:00:01: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 15:00:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:03:02: [SM] Changed map to "dod_strand"
+L 12/27/2025 - 15:03:03: -------- Mapchange to dod_strand --------
+L 12/27/2025 - 15:03:04: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_strand.smnav".
+L 12/27/2025 - 15:03:04: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 15:03:06: [NavBot] Adding NavBot to the game. #2<0x9083378>
+L 12/27/2025 - 15:03:06: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:03:08: [NavBot] Adding NavBot to the game. #3<0x908338c>
+L 12/27/2025 - 15:03:08: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:03:10: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 15:03:10: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:03:12: [NavBot] Adding NavBot to the game. #6<0x90833c8>
+L 12/27/2025 - 15:03:12: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 15:10:02: [NavBot] Adding NavBot to the game. #2<0x9083378>
+L 12/27/2025 - 15:10:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:10:52: [NavBot] Adding NavBot to the game. #2<0x9083378>
+L 12/27/2025 - 15:10:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:10:54: [NavBot] Adding NavBot to the game. #3<0x908338c>
+L 12/27/2025 - 15:10:54: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:10:56: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 15:10:56: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:10:58: [NavBot] Adding NavBot to the game. #6<0x90833c8>
+L 12/27/2025 - 15:10:58: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 15:20:02: [NavBot] Adding NavBot to the game. #5<0x90833b4>
+L 12/27/2025 - 15:20:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:26:06: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 15:26:06: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 15:26:06: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 15:26:06: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 15:26:06: [NavBot] Registered 34 natives.
+L 12/27/2025 - 15:26:07: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 15:26:07: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 15:26:09: [NavBot] Adding NavBot to the game. #1<0xa8d9f44>
+L 12/27/2025 - 15:26:09: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:26:11: [NavBot] Adding NavBot to the game. #2<0xa8d9f58>
+L 12/27/2025 - 15:26:11: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:26:13: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 15:26:13: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:26:14: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 15:26:15: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 15:26:15: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 15:30:01: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 15:30:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 15:40:01: [NavBot] Adding NavBot to the game. #1<0xa8d9f44>
+L 12/27/2025 - 15:40:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 15:50:01: [NavBot] Adding NavBot to the game. #2<0xa8d9f58>
+L 12/27/2025 - 15:50:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 15:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 15:58:21: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 15:59:10: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 16:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 16:00:01: [NavBot] Adding NavBot to the game. #2<0xa8d9f58>
+L 12/27/2025 - 16:00:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:01:39: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 16:01:40: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 16:01:40: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 16:01:40: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 16:01:42: [NavBot] Adding NavBot to the game. #2<0xa8d9f58>
+L 12/27/2025 - 16:01:42: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:01:44: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 16:01:44: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:01:46: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 16:01:46: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:01:48: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 16:01:48: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 16:10:00: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 16:10:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:14:02: [NavBot] Bot "[Spy]MoeBerg" suicided due to being stuck for too long. 3461.28 -473.918 476.743
+L 12/27/2025 - 16:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 16:20:00: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 16:20:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 16:30:00: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 16:30:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:33:54: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 16:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:36:28: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. 3636.64 3101.75 521.031
+L 12/27/2025 - 16:37:10: [SM] Changed map to "dod_beachlanding_tdf"
+L 12/27/2025 - 16:37:11: -------- Mapchange to dod_beachlanding_tdf --------
+L 12/27/2025 - 16:37:11: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_beachlanding_tdf.smnav".
+L 12/27/2025 - 16:37:11: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 16:37:13: [NavBot] Adding NavBot to the game. #2<0xa8d9f58>
+L 12/27/2025 - 16:37:13: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:37:15: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 16:37:15: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:37:17: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 16:37:17: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:37:19: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 16:37:19: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:39:33: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. -1049.01 1198.84 -2079.65
+L 12/27/2025 - 16:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 16:40:01: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 16:40:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:49:57: [NavBot] Bot "[Spy]EddieChapman" suicided due to being stuck for too long. -975.003 2764.02 -767.071
+L 12/27/2025 - 16:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 16:50:01: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 16:50:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 16:51:56: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. -1048.74 1480.9 -1656.99
+L 12/27/2025 - 16:52:49: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. -1102.36 1462.6 -1682.64
+L 12/27/2025 - 16:53:20: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. -949.024 1288.16 -1945.93
+L 12/27/2025 - 16:54:23: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. 2724.01 1360.24 -1411.42
+L 12/27/2025 - 16:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 16:55:07: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 16:55:50: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. -949.605 1288.47 -1945.2
+L 12/27/2025 - 17:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 17:00:01: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 17:00:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:01:30: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. 2724.03 1331.35 -1457.92
+L 12/27/2025 - 17:02:19: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. 2724.01 1346.18 -1435.01
+L 12/27/2025 - 17:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:05:05: [NavBot] Bot "[Spy]ThomasRobertson" suicided due to being stuck for too long. 2724 1346.18 -1435
+L 12/27/2025 - 17:06:58: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 17:09:25: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 17:09:29: [mapchooser_extended.smx] Voting for next map has finished. Nextmap: dod_kraps.
+L 12/27/2025 - 17:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 17:10:01: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 17:10:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:12:41: [SM] Changed map to "dod_kraps"
+L 12/27/2025 - 17:12:42: -------- Mapchange to dod_kraps --------
+L 12/27/2025 - 17:12:43: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_kraps.smnav".
+L 12/27/2025 - 17:12:43: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 17:12:45: [NavBot] Adding NavBot to the game. #2<0xa8d9f58>
+L 12/27/2025 - 17:12:45: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:12:47: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 17:12:47: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:12:49: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 17:12:49: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:12:51: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 17:12:51: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:19:39: [NavBot] Adding NavBot to the game. #2<0xa8d9f58>
+L 12/27/2025 - 17:19:39: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:19:41: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 17:19:41: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:19:43: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 17:19:43: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:19:45: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 17:19:45: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 17:20:01: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 17:20:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:22:11: [NavBot] Bot "[Spy]JohnHamilton" suicided due to being stuck for too long. -402.413 400.606 -212.325
+L 12/27/2025 - 17:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:29:05: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 17:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 17:30:01: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 17:30:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:30:32: [afk-manager.smx] "* LGG * smoody<102><[U:1:20863715]><>" moved to spectators
+L 12/27/2025 - 17:31:35: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 17:31:35: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:31:37: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 17:31:37: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:31:39: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 17:31:39: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:31:41: [NavBot] Adding NavBot to the game. #7<0xa8d9fbc>
+L 12/27/2025 - 17:31:41: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:36:15: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 17:37:11: [NavBot] Adding NavBot to the game. #2<0xa8d9f58>
+L 12/27/2025 - 17:37:11: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:37:13: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 17:37:13: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:37:15: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 17:37:15: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:37:17: [NavBot] Adding NavBot to the game. #7<0xa8d9fbc>
+L 12/27/2025 - 17:37:17: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 17:40:01: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 17:40:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:41:01: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 17:44:57: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 17:44:58: [NavBot] Bot "[Spy]DuncanScott-Ford" suicided due to being stuck for too long. -499.723 -426.969 -331.836
+L 12/27/2025 - 17:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:46:25: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 17:46:25: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:46:27: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 17:46:27: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:46:29: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 17:46:29: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:46:31: [NavBot] Adding NavBot to the game. #7<0xa8d9fbc>
+L 12/27/2025 - 17:46:31: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:46:31: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 17:47:43: [afk-manager.smx] "* LGG * smoody<134><[U:1:20863715]><>" moved to spectators
+L 12/27/2025 - 17:49:41: [NavBot] Adding NavBot to the game. #1<0xa8d9f44>
+L 12/27/2025 - 17:49:41: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:49:43: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 17:49:43: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:49:45: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 17:49:45: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:49:47: [NavBot] Adding NavBot to the game. #7<0xa8d9fbc>
+L 12/27/2025 - 17:49:47: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 17:50:01: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 17:50:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 17:55:53: [mapchooser_extended.smx] Starting map vote because outside request
+L 12/27/2025 - 17:55:53: [mapchooser_extended.smx] Starting map vote because outside request
+L 12/27/2025 - 17:56:04: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 17:57:49: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 17:57:49: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:57:51: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 17:57:51: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:57:53: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 17:57:53: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:57:55: [NavBot] Adding NavBot to the game. #7<0xa8d9fbc>
+L 12/27/2025 - 17:57:55: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:57:57: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 17:59:30: [SM] Changed map to "dod_strand"
+L 12/27/2025 - 17:59:32: -------- Mapchange to dod_strand --------
+L 12/27/2025 - 17:59:32: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_strand.smnav".
+L 12/27/2025 - 17:59:32: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 17:59:34: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 17:59:34: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:59:36: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 17:59:36: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:59:38: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 17:59:38: [NavBot] NavBot added to the game.
+L 12/27/2025 - 17:59:40: [NavBot] Adding NavBot to the game. #7<0xa8d9fbc>
+L 12/27/2025 - 17:59:40: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 18:00:00: [NavBot] Adding NavBot to the game. #7<0xa8d9fbc>
+L 12/27/2025 - 18:00:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:00:54: [mapchooser_extended.smx] Starting map vote because outside request
+L 12/27/2025 - 18:00:54: [mapchooser_extended.smx] Starting map vote because outside request
+L 12/27/2025 - 18:01:00: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 18:03:26: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 18:03:26: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:03:28: [NavBot] Adding NavBot to the game. #4<0xa8d9f80>
+L 12/27/2025 - 18:03:28: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:03:30: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 18:03:30: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:03:32: [NavBot] Adding NavBot to the game. #7<0xa8d9fbc>
+L 12/27/2025 - 18:03:32: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:08:34: [NavBot] Adding NavBot to the game. #2<0xa8d9f58>
+L 12/27/2025 - 18:08:34: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:08:36: [NavBot] Adding NavBot to the game. #3<0xa8d9f6c>
+L 12/27/2025 - 18:08:36: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:08:38: [NavBot] Adding NavBot to the game. #5<0xa8d9f94>
+L 12/27/2025 - 18:08:38: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:08:40: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 18:08:40: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 18:10:00: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 18:10:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:14:22: [NavBot] Bot "[Spy]EdwardKerling" suicided due to being stuck for too long. -12.2407 3840.03 -298.469
+L 12/27/2025 - 18:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 18:20:00: [NavBot] Adding NavBot to the game. #6<0xa8d9fa8>
+L 12/27/2025 - 18:20:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:23:49: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 18:23:49: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 18:23:49: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 18:23:49: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 18:23:49: [NavBot] Registered 34 natives.
+L 12/27/2025 - 18:23:50: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 18:23:50: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 18:23:52: [NavBot] Adding NavBot to the game. #1<0x9d661c4>
+L 12/27/2025 - 18:23:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:23:54: [NavBot] Adding NavBot to the game. #2<0x9d661d8>
+L 12/27/2025 - 18:23:54: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:23:56: [NavBot] Adding NavBot to the game. #3<0x9d661ec>
+L 12/27/2025 - 18:23:56: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:23:57: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 18:23:58: [NavBot] Adding NavBot to the game. #4<0x9d66200>
+L 12/27/2025 - 18:23:58: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 18:30:02: [NavBot] Adding NavBot to the game. #3<0x9d661ec>
+L 12/27/2025 - 18:30:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 18:40:02: [NavBot] Adding NavBot to the game. #2<0x9d661d8>
+L 12/27/2025 - 18:40:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 18:50:02: [NavBot] Adding NavBot to the game. #1<0x9d661c4>
+L 12/27/2025 - 18:50:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:54:53: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 18:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 18:56:04: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 18:57:40: [NavBot] Bot "[Spy]HaroldCole" suicided due to being stuck for too long. 2594.02 2400.03 827.557
+L 12/27/2025 - 18:59:21: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 18:59:22: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 18:59:23: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 18:59:23: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 18:59:25: [NavBot] Adding NavBot to the game. #2<0x9d661d8>
+L 12/27/2025 - 18:59:25: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:59:27: [NavBot] Adding NavBot to the game. #3<0x9d661ec>
+L 12/27/2025 - 18:59:27: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:59:29: [NavBot] Adding NavBot to the game. #5<0x9d66214>
+L 12/27/2025 - 18:59:29: [NavBot] NavBot added to the game.
+L 12/27/2025 - 18:59:31: [NavBot] Adding NavBot to the game. #6<0x9d66228>
+L 12/27/2025 - 18:59:31: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 19:00:01: [NavBot] Adding NavBot to the game. #5<0x9d66214>
+L 12/27/2025 - 19:00:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:00:52: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. 2373.08 4381.51 193.031
+L 12/27/2025 - 19:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 19:10:01: [NavBot] Adding NavBot to the game. #6<0x9d66228>
+L 12/27/2025 - 19:10:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:14:01: [NavBot] Adding NavBot to the game. #2<0x9d661d8>
+L 12/27/2025 - 19:14:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:14:03: [NavBot] Adding NavBot to the game. #3<0x9d661ec>
+L 12/27/2025 - 19:14:03: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:14:05: [NavBot] Adding NavBot to the game. #5<0x9d66214>
+L 12/27/2025 - 19:14:05: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:14:07: [NavBot] Adding NavBot to the game. #6<0x9d66228>
+L 12/27/2025 - 19:14:07: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 19:20:01: [NavBot] Adding NavBot to the game. #6<0x9d66228>
+L 12/27/2025 - 19:20:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:29:15: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 19:29:15: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 19:29:15: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 19:29:15: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 19:29:15: [NavBot] Registered 34 natives.
+L 12/27/2025 - 19:29:16: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 19:29:16: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 19:29:18: [NavBot] Adding NavBot to the game. #1<0x8df8014>
+L 12/27/2025 - 19:29:18: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:29:20: [NavBot] Adding NavBot to the game. #2<0x8df8028>
+L 12/27/2025 - 19:29:20: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:29:22: [NavBot] Adding NavBot to the game. #3<0x8df803c>
+L 12/27/2025 - 19:29:22: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:29:23: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 19:29:24: [NavBot] Adding NavBot to the game. #4<0x8df8050>
+L 12/27/2025 - 19:29:24: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 19:30:02: [NavBot] Adding NavBot to the game. #3<0x8df803c>
+L 12/27/2025 - 19:30:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:33:02: [NavBot] Adding NavBot to the game. #1<0x8df8014>
+L 12/27/2025 - 19:33:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:33:04: [NavBot] Adding NavBot to the game. #3<0x8df803c>
+L 12/27/2025 - 19:33:04: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:33:06: [NavBot] Adding NavBot to the game. #4<0x8df8050>
+L 12/27/2025 - 19:33:06: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:33:08: [NavBot] Adding NavBot to the game. #6<0x8df8078>
+L 12/27/2025 - 19:33:08: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 19:40:02: [NavBot] Adding NavBot to the game. #1<0x8df8014>
+L 12/27/2025 - 19:40:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:48:19: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 19:48:19: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 19:48:19: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 19:48:19: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 19:48:19: [NavBot] Registered 34 natives.
+L 12/27/2025 - 19:48:19: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 19:48:20: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 19:48:22: [NavBot] Adding NavBot to the game. #1<0x9deaee4>
+L 12/27/2025 - 19:48:22: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:48:24: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 19:48:24: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:48:26: [NavBot] Adding NavBot to the game. #3<0x9deaf0c>
+L 12/27/2025 - 19:48:26: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:48:27: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 19:48:28: [NavBot] Adding NavBot to the game. #4<0x9deaf20>
+L 12/27/2025 - 19:48:28: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 19:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 19:50:02: [NavBot] Adding NavBot to the game. #4<0x9deaf20>
+L 12/27/2025 - 19:50:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 19:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 20:00:02: [NavBot] Adding NavBot to the game. #3<0x9deaf0c>
+L 12/27/2025 - 20:00:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 20:10:02: [NavBot] Adding NavBot to the game. #1<0x9deaee4>
+L 12/27/2025 - 20:10:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:17:31: [basecommands.smx] "DNA.styx<24><[U:1:40203]><>" changed map to "dod_kraps"
+L 12/27/2025 - 20:17:34: [SM] Changed map to "dod_kraps"
+L 12/27/2025 - 20:17:35: -------- Mapchange to dod_kraps --------
+L 12/27/2025 - 20:17:35: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_kraps.smnav".
+L 12/27/2025 - 20:17:35: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 20:17:37: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 20:17:37: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:17:39: [NavBot] Adding NavBot to the game. #3<0x9deaf0c>
+L 12/27/2025 - 20:17:39: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:17:41: [NavBot] Adding NavBot to the game. #5<0x9deaf34>
+L 12/27/2025 - 20:17:41: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:17:43: [NavBot] Adding NavBot to the game. #6<0x9deaf48>
+L 12/27/2025 - 20:17:43: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 20:20:01: [NavBot] Adding NavBot to the game. #5<0x9deaf34>
+L 12/27/2025 - 20:20:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:25:20: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 20:25:36: [mapchooser_extended.smx] Voting for next map has finished. Nextmap: dickmanns_deepriver_syp_final.
+L 12/27/2025 - 20:27:18: [SM] Changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 20:27:20: -------- Mapchange to dickmanns_deepriver_syp_final --------
+L 12/27/2025 - 20:27:20: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dickmanns_deepriver_syp_final.smnav".
+L 12/27/2025 - 20:27:20: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 20:27:22: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 20:27:22: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:27:24: [NavBot] Adding NavBot to the game. #3<0x9deaf0c>
+L 12/27/2025 - 20:27:24: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:27:40: [basecommands.smx] "Console<0><Console><Console>" executed config (file "sourcemod/disable_rcbots2.cfg")
+L 12/27/2025 - 20:27:40: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]AndrewHill<39><BOT><>" (reason "")
+L 12/27/2025 - 20:27:40: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]EddieChapman<40><BOT><>" (reason "")
+L 12/27/2025 - 20:27:40: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]DuÅ¡anPopov<41><BOT><>" (reason "")
+L 12/27/2025 - 20:27:40: [basecommands.smx] "Console<0><Console><Console>" kicked "[Uffz]HeinzMÃ¼ller<42><BOT><>" (reason "")
+L 12/27/2025 - 20:27:40: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]RobertDube<43><BOT><>" (reason "")
+L 12/27/2025 - 20:27:40: [basecommands.smx] "Console<0><Console><Console>" kicked "[Gefr]ErichSchulz<44><BOT><>" (reason "")
+L 12/27/2025 - 20:27:42: [NavBot] Adding NavBot to the game. #1<0x9deaee4>
+L 12/27/2025 - 20:27:42: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:27:58: [NavBot] Adding NavBot to the game. #1<0x9deaee4>
+L 12/27/2025 - 20:27:58: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:28:00: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 20:28:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 20:30:00: [NavBot] Adding NavBot to the game. #1<0x9deaee4>
+L 12/27/2025 - 20:30:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:39:34: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 20:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 20:40:00: [NavBot] Adding NavBot to the game. #1<0x9deaee4>
+L 12/27/2025 - 20:40:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:42:50: [NavBot] Adding NavBot to the game. #1<0x9deaee4>
+L 12/27/2025 - 20:42:50: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:42:52: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 20:42:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 20:50:00: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 20:50:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 20:58:19: [SM] Changed map to "dod_beachlanding_tdf"
+L 12/27/2025 - 20:58:20: -------- Mapchange to dod_beachlanding_tdf --------
+L 12/27/2025 - 20:58:21: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_beachlanding_tdf.smnav".
+L 12/27/2025 - 20:58:21: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 20:58:23: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 20:58:23: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:58:25: [NavBot] Adding NavBot to the game. #4<0x9deaf20>
+L 12/27/2025 - 20:58:25: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:58:27: [NavBot] Adding NavBot to the game. #5<0x9deaf34>
+L 12/27/2025 - 20:58:27: [NavBot] NavBot added to the game.
+L 12/27/2025 - 20:58:29: [NavBot] Adding NavBot to the game. #7<0x9deaf5c>
+L 12/27/2025 - 20:58:29: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 21:00:01: [NavBot] Adding NavBot to the game. #7<0x9deaf5c>
+L 12/27/2025 - 21:00:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:04:40: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 21:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:09:03: [NavBot] Bot "[Spy]WilfredDunderdale" suicided due to being stuck for too long. -1025.04 1478.51 -1657.02
+L 12/27/2025 - 21:09:20: [SM] Changed map to "dod_kraps"
+L 12/27/2025 - 21:09:22: -------- Mapchange to dod_kraps --------
+L 12/27/2025 - 21:09:22: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_kraps.smnav".
+L 12/27/2025 - 21:09:22: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 21:09:24: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 21:09:24: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:09:26: [NavBot] Adding NavBot to the game. #4<0x9deaf20>
+L 12/27/2025 - 21:09:26: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:09:28: [NavBot] Adding NavBot to the game. #6<0x9deaf48>
+L 12/27/2025 - 21:09:28: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:09:30: [NavBot] Adding NavBot to the game. #7<0x9deaf5c>
+L 12/27/2025 - 21:09:30: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 21:10:00: [NavBot] Adding NavBot to the game. #4<0x9deaf20>
+L 12/27/2025 - 21:10:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 21:20:00: [NavBot] Adding NavBot to the game. #3<0x9deaf0c>
+L 12/27/2025 - 21:20:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:21:22: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 21:21:22: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:21:24: [NavBot] Adding NavBot to the game. #3<0x9deaf0c>
+L 12/27/2025 - 21:21:24: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:21:26: [NavBot] Adding NavBot to the game. #5<0x9deaf34>
+L 12/27/2025 - 21:21:26: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:21:28: [NavBot] Adding NavBot to the game. #6<0x9deaf48>
+L 12/27/2025 - 21:21:28: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:24:02: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 21:24:54: [basecommands.smx] "DNA.styx<99><[U:1:40203]><>" changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 21:24:57: [SM] Changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 21:24:58: -------- Mapchange to dickmanns_deepriver_syp_final --------
+L 12/27/2025 - 21:24:58: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dickmanns_deepriver_syp_final.smnav".
+L 12/27/2025 - 21:24:58: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 21:25:00: [NavBot] Adding NavBot to the game. #2<0x9deaef8>
+L 12/27/2025 - 21:25:00: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:25:02: [NavBot] Adding NavBot to the game. #1<0x9deaee4>
+L 12/27/2025 - 21:25:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:25:18: [basecommands.smx] "Console<0><Console><Console>" executed config (file "sourcemod/disable_rcbots2.cfg")
+L 12/27/2025 - 21:25:18: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]HaroldCole<102><BOT><>" (reason "")
+L 12/27/2025 - 21:25:18: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]MoeBerg<101><BOT><>" (reason "")
+L 12/27/2025 - 21:25:18: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]AndrewHill<103><BOT><>" (reason "")
+L 12/27/2025 - 21:25:18: [basecommands.smx] "Console<0><Console><Console>" kicked "[Uffz]HeinzMÃ¼ller<104><BOT><>" (reason "")
+L 12/27/2025 - 21:25:18: [basecommands.smx] "Console<0><Console><Console>" kicked "[Gefr]ErichSchulz<105><BOT><>" (reason "")
+L 12/27/2025 - 21:25:20: [NavBot] Adding NavBot to the game. #1<0x9deaee4>
+L 12/27/2025 - 21:25:20: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:26:14: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 21:26:14: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 21:26:14: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 21:26:14: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 21:26:14: [NavBot] Registered 34 natives.
+L 12/27/2025 - 21:26:15: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 21:26:15: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 21:26:17: [NavBot] Adding NavBot to the game. #1<0x9f75e04>
+L 12/27/2025 - 21:26:17: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:26:19: [NavBot] Adding NavBot to the game. #2<0x9f75e18>
+L 12/27/2025 - 21:26:19: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:26:21: [NavBot] Adding NavBot to the game. #3<0x9f75e2c>
+L 12/27/2025 - 21:26:21: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:26:22: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 21:26:23: [NavBot] Adding NavBot to the game. #4<0x9f75e40>
+L 12/27/2025 - 21:26:23: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:26:59: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 21:26:59: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 21:26:59: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 21:26:59: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 21:26:59: [NavBot] Registered 34 natives.
+L 12/27/2025 - 21:26:59: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 21:27:00: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 21:27:01: [NavBot] Adding NavBot to the game. #1<0xaa00654>
+L 12/27/2025 - 21:27:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:27:03: [NavBot] Adding NavBot to the game. #2<0xaa00668>
+L 12/27/2025 - 21:27:03: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:27:05: [NavBot] Adding NavBot to the game. #3<0xaa0067c>
+L 12/27/2025 - 21:27:05: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:27:07: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 21:27:07: [NavBot] Adding NavBot to the game. #4<0xaa00690>
+L 12/27/2025 - 21:27:07: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:27:29: [basecommands.smx] "DNA.styx<9><[U:1:40203]><>" changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 21:27:33: [SM] Changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 21:27:34: -------- Mapchange to dickmanns_deepriver_syp_final --------
+L 12/27/2025 - 21:27:34: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dickmanns_deepriver_syp_final.smnav".
+L 12/27/2025 - 21:27:34: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 21:27:36: [NavBot] Adding NavBot to the game. #2<0xaa00668>
+L 12/27/2025 - 21:27:36: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:27:38: [NavBot] Adding NavBot to the game. #3<0xaa0067c>
+L 12/27/2025 - 21:27:38: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:27:54: [basecommands.smx] "Console<0><Console><Console>" executed config (file "sourcemod/disable_rcbots2.cfg")
+L 12/27/2025 - 21:27:54: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]AndrewHill<13><BOT><>" (reason "")
+L 12/27/2025 - 21:27:54: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]EddieChapman<14><BOT><>" (reason "")
+L 12/27/2025 - 21:27:54: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]WilfredDunderdale<15><BOT><>" (reason "")
+L 12/27/2025 - 21:27:54: [basecommands.smx] "Console<0><Console><Console>" kicked "[Uffz]HeinzMÃ¼ller<16><BOT><>" (reason "")
+L 12/27/2025 - 21:27:54: [basecommands.smx] "Console<0><Console><Console>" kicked "[Gefr]ErichSchulz<17><BOT><>" (reason "")
+L 12/27/2025 - 21:27:54: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]RobertDube<18><BOT><>" (reason "")
+L 12/27/2025 - 21:27:56: [NavBot] Adding NavBot to the game. #1<0xaa00654>
+L 12/27/2025 - 21:27:56: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:27:58: [NavBot] Adding NavBot to the game. #2<0xaa00668>
+L 12/27/2025 - 21:27:58: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:28:22: [basecommands.smx] "DNA.styx<9><[U:1:40203]><>" console command (cmdline "sm_navbot_quota_target 0")
+L 12/27/2025 - 21:29:12: [basecommands.smx] "DNA.styx<9><[U:1:40203]><>" console command (cmdline "rcbotd config max_bots 2")
+L 12/27/2025 - 21:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 21:30:37: [basecommands.smx] "DNA.styx<9><[U:1:40203]><>" console command (cmdline "mp_limit_allies_rifleman 0")
+L 12/27/2025 - 21:30:51: [basecommands.smx] "DNA.styx<9><[U:1:40203]><>" console command (cmdline "mp_limit_axis_rifleman 0")
+L 12/27/2025 - 21:31:05: [basecommands.smx] "DNA.styx<9><[U:1:40203]><>" kicked "[PFC]AndrewHill<21><BOT><>" (reason "")
+L 12/27/2025 - 21:31:20: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 21:31:20: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 21:31:20: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 21:31:20: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 21:31:20: [NavBot] Registered 34 natives.
+L 12/27/2025 - 21:31:22: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 21:31:22: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 21:31:24: [NavBot] Adding NavBot to the game. #1<0x8fa0f64>
+L 12/27/2025 - 21:31:24: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:31:26: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 21:31:26: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:31:28: [NavBot] Adding NavBot to the game. #3<0x8fa0f8c>
+L 12/27/2025 - 21:31:28: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:31:29: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 21:31:30: [NavBot] Adding NavBot to the game. #4<0x8fa0fa0>
+L 12/27/2025 - 21:31:30: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 21:40:02: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 21:40:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:42:37: [NavBot] Bot "[Spy]HaroldCole" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 21:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 21:50:02: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 21:50:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 21:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 21:58:25: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 22:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 22:00:02: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 22:00:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:03:36: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 22:04:19: [NavBot] Bot "[Spy]EddieChapman" suicided due to being stuck for too long. 2594.01 2400.03 827.54
+L 12/27/2025 - 22:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:06:54: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 22:06:55: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 22:06:55: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 22:06:55: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:06:57: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 22:06:57: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:06:59: [NavBot] Adding NavBot to the game. #3<0x8fa0f8c>
+L 12/27/2025 - 22:06:59: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:07:01: [NavBot] Adding NavBot to the game. #5<0x8fa0fb4>
+L 12/27/2025 - 22:07:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:07:03: [NavBot] Adding NavBot to the game. #6<0x8fa0fc8>
+L 12/27/2025 - 22:07:03: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 22:10:01: [NavBot] Adding NavBot to the game. #6<0x8fa0fc8>
+L 12/27/2025 - 22:10:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:10:57: [basecommands.smx] "DNA.styx<39><[U:1:40203]><>" changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:11:00: [SM] Changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:11:01: -------- Mapchange to dickmanns_deepriver_syp_final --------
+L 12/27/2025 - 22:11:01: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dickmanns_deepriver_syp_final.smnav".
+L 12/27/2025 - 22:11:01: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:11:03: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 22:11:03: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:11:05: [NavBot] Adding NavBot to the game. #3<0x8fa0f8c>
+L 12/27/2025 - 22:11:05: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:11:21: [basecommands.smx] "Console<0><Console><Console>" executed config (file "sourcemod/disable_rcbots2.cfg")
+L 12/27/2025 - 22:11:21: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]AndrewHill<40><BOT><>" (reason "")
+L 12/27/2025 - 22:11:21: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]JohnHamilton<41><BOT><>" (reason "")
+L 12/27/2025 - 22:11:21: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]WilfredDunderdale<42><BOT><>" (reason "")
+L 12/27/2025 - 22:11:21: [basecommands.smx] "Console<0><Console><Console>" kicked "[Uffz]HeinzMÃ¼ller<43><BOT><>" (reason "")
+L 12/27/2025 - 22:11:21: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]RobertDube<44><BOT><>" (reason "")
+L 12/27/2025 - 22:11:21: [basecommands.smx] "Console<0><Console><Console>" kicked "[Gefr]ErichSchulz<45><BOT><>" (reason "")
+L 12/27/2025 - 22:11:23: [NavBot] Adding NavBot to the game. #1<0x8fa0f64>
+L 12/27/2025 - 22:11:23: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:11:25: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 22:11:25: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:12:03: [basecommands.smx] "DNA.styx<39><[U:1:40203]><>" changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:12:07: [SM] Changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:12:07: -------- Mapchange to dickmanns_deepriver_syp_final --------
+L 12/27/2025 - 22:12:08: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dickmanns_deepriver_syp_final.smnav".
+L 12/27/2025 - 22:12:08: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:12:10: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 22:12:10: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:12:12: [NavBot] Adding NavBot to the game. #3<0x8fa0f8c>
+L 12/27/2025 - 22:12:12: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:12:28: [basecommands.smx] "Console<0><Console><Console>" executed config (file "sourcemod/disable_rcbots2.cfg")
+L 12/27/2025 - 22:12:28: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]AndrewHill<48><BOT><>" (reason "")
+L 12/27/2025 - 22:12:28: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]DuncanScott-Ford<49><BOT><>" (reason "")
+L 12/27/2025 - 22:12:28: [basecommands.smx] "Console<0><Console><Console>" kicked "[Spy]HaroldCole<50><BOT><>" (reason "")
+L 12/27/2025 - 22:12:28: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]RobertDube<51><BOT><>" (reason "")
+L 12/27/2025 - 22:12:28: [basecommands.smx] "Console<0><Console><Console>" kicked "[Uffz]HeinzMÃ¼ller<52><BOT><>" (reason "")
+L 12/27/2025 - 22:12:28: [basecommands.smx] "Console<0><Console><Console>" kicked "[Pvt]ClaudDrummond<53><BOT><>" (reason "")
+L 12/27/2025 - 22:12:30: [NavBot] Adding NavBot to the game. #1<0x8fa0f64>
+L 12/27/2025 - 22:12:30: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:12:32: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 22:12:32: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:15:14: [basecommands.smx] "DNA.styx<39><[U:1:40203]><>" changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:15:17: [SM] Changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:15:18: -------- Mapchange to dickmanns_deepriver_syp_final --------
+L 12/27/2025 - 22:15:18: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dickmanns_deepriver_syp_final.smnav".
+L 12/27/2025 - 22:15:19: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:15:21: [NavBot] Adding NavBot to the game. #2<0x8fa0f78>
+L 12/27/2025 - 22:15:21: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:15:36: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 22:15:36: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 22:15:36: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 22:15:36: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 22:15:36: [NavBot] Registered 34 natives.
+L 12/27/2025 - 22:15:37: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 22:15:38: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:15:40: [NavBot] Adding NavBot to the game. #1<0x8f50cb4>
+L 12/27/2025 - 22:15:40: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:15:42: [NavBot] Adding NavBot to the game. #2<0x8f50cc8>
+L 12/27/2025 - 22:15:42: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:15:44: [NavBot] Adding NavBot to the game. #3<0x8f50cdc>
+L 12/27/2025 - 22:15:44: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:15:45: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 22:15:46: [NavBot] Adding NavBot to the game. #4<0x8f50cf0>
+L 12/27/2025 - 22:15:46: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:17:14: [NavBot] Bot "[Spy]Jeannie-deClarens" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 22:19:41: [NavBot] Bot "[Spy]DuÅ¡anPopov" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 22:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 22:20:02: [NavBot] Adding NavBot to the game. #3<0x8f50cdc>
+L 12/27/2025 - 22:20:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 22:30:02: [NavBot] Adding NavBot to the game. #2<0x8f50cc8>
+L 12/27/2025 - 22:30:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:31:05: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 22:31:05: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 22:31:05: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 22:31:05: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 22:31:05: [NavBot] Registered 34 natives.
+L 12/27/2025 - 22:31:06: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 22:31:06: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:31:08: [NavBot] Adding NavBot to the game. #1<0xa4d4fd4>
+L 12/27/2025 - 22:31:08: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:31:10: [NavBot] Adding NavBot to the game. #2<0xa4d4fe8>
+L 12/27/2025 - 22:31:10: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:31:12: [NavBot] Adding NavBot to the game. #3<0xa4d4ffc>
+L 12/27/2025 - 22:31:12: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:31:13: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 22:31:14: [NavBot] Adding NavBot to the game. #4<0xa4d5010>
+L 12/27/2025 - 22:31:14: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:31:47: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 22:31:47: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 22:31:47: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 22:31:47: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 22:31:47: [NavBot] Registered 34 natives.
+L 12/27/2025 - 22:31:48: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 22:31:48: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:31:50: [NavBot] Adding NavBot to the game. #1<0x94eefa4>
+L 12/27/2025 - 22:31:50: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:31:52: [NavBot] Adding NavBot to the game. #2<0x94eefb8>
+L 12/27/2025 - 22:31:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:31:54: [NavBot] Adding NavBot to the game. #3<0x94eefcc>
+L 12/27/2025 - 22:31:54: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:31:55: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 22:31:56: [NavBot] Adding NavBot to the game. #4<0x94eefe0>
+L 12/27/2025 - 22:31:56: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:36:30: [basecommands.smx] "DNA.styx<16><[U:1:40203]><>" changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:36:33: [SM] Changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:36:34: -------- Mapchange to dickmanns_deepriver_syp_final --------
+L 12/27/2025 - 22:36:34: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dickmanns_deepriver_syp_final.smnav".
+L 12/27/2025 - 22:36:34: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:36:36: [NavBot] Adding NavBot to the game. #2<0x94eefb8>
+L 12/27/2025 - 22:36:36: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:36:51: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 22:36:51: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 22:36:51: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 22:36:51: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 22:36:51: [NavBot] Registered 34 natives.
+L 12/27/2025 - 22:36:53: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 22:36:53: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:36:55: [NavBot] Adding NavBot to the game. #1<0xaa63284>
+L 12/27/2025 - 22:36:55: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:36:57: [NavBot] Adding NavBot to the game. #2<0xaa63298>
+L 12/27/2025 - 22:36:57: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:36:59: [NavBot] Adding NavBot to the game. #3<0xaa632ac>
+L 12/27/2025 - 22:36:59: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:37:00: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 22:37:01: [NavBot] Adding NavBot to the game. #4<0xaa632c0>
+L 12/27/2025 - 22:37:01: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:37:33: [basecommands.smx] "DNA.styx<11><[U:1:40203]><>" changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:37:36: [SM] Changed map to "dickmanns_deepriver_syp_final"
+L 12/27/2025 - 22:37:37: -------- Mapchange to dickmanns_deepriver_syp_final --------
+L 12/27/2025 - 22:37:38: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dickmanns_deepriver_syp_final.smnav".
+L 12/27/2025 - 22:37:38: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:37:40: [NavBot] Adding NavBot to the game. #2<0xaa63298>
+L 12/27/2025 - 22:37:40: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:37:58: [basecommands.smx] "Console<0><Console><Console>" executed config (file "sourcemod/disable_rcbots2.cfg")
+L 12/27/2025 - 22:37:58: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]AndrewHill<15><BOT><>" (reason "")
+L 12/27/2025 - 22:37:58: [basecommands.smx] "Console<0><Console><Console>" kicked "[Uffz]HeinzMÃ¼ller<17><BOT><>" (reason "")
+L 12/27/2025 - 22:37:58: [basecommands.smx] "Console<0><Console><Console>" kicked "[PFC]RobertDube<18><BOT><>" (reason "")
+L 12/27/2025 - 22:37:58: [basecommands.smx] "Console<0><Console><Console>" kicked "[Gefr]ErichSchulz<19><BOT><>" (reason "")
+L 12/27/2025 - 22:38:28: [basecommands.smx] "DNA.styx<11><[U:1:40203]><>" console command (cmdline "rcbot addbot 3 -1")
+L 12/27/2025 - 22:38:34: [basecommands.smx] "DNA.styx<11><[U:1:40203]><>" console command (cmdline "rcbotd addbot 3 -1")
+L 12/27/2025 - 22:38:36: [basecommands.smx] "DNA.styx<11><[U:1:40203]><>" console command (cmdline "rcbotd addbot 3 -1")
+L 12/27/2025 - 22:38:37: [basecommands.smx] "DNA.styx<11><[U:1:40203]><>" console command (cmdline "rcbotd addbot 3 -1")
+L 12/27/2025 - 22:38:38: [basecommands.smx] "DNA.styx<11><[U:1:40203]><>" console command (cmdline "rcbotd addbot 3 -1")
+L 12/27/2025 - 22:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 22:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:49:52: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 22:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 22:53:58: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 22:54:00: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 22:54:00: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 22:54:00: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:54:02: [NavBot] Adding NavBot to the game. #2<0xaa63298>
+L 12/27/2025 - 22:54:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:54:04: [NavBot] Adding NavBot to the game. #3<0xaa632ac>
+L 12/27/2025 - 22:54:04: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:54:06: [NavBot] Adding NavBot to the game. #4<0xaa632c0>
+L 12/27/2025 - 22:54:06: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:54:08: [NavBot] Adding NavBot to the game. #6<0xaa632e8>
+L 12/27/2025 - 22:54:08: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 22:58:50: SourceMod log file session started (file "/home/dodsserver/serverfiles/dod/addons/sourcemod/logs/L20251227.log") (Version "1.12.0.7195")
+L 12/27/2025 - 22:58:50: [NavBot] CBasePlayer::PlayerRunCommand hook enabled!
+L 12/27/2025 - 22:58:50: [NavBot] Loaded bot difficulty profiles. Number of profiles: 4
+L 12/27/2025 - 22:58:50: [NavBot] Extension fully loaded. Source Engine 'Day of Defeat: Source Branch'. Detected Mod: 'Day of Defeat: Source'
+L 12/27/2025 - 22:58:50: [NavBot] Registered 34 natives.
+L 12/27/2025 - 22:58:50: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_dday_h.smnav".
+L 12/27/2025 - 22:58:51: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 22:58:52: [NavBot] Adding NavBot to the game. #1<0xa9f7864>
+L 12/27/2025 - 22:58:52: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:58:54: [NavBot] Adding NavBot to the game. #2<0xa9f7878>
+L 12/27/2025 - 22:58:54: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:58:56: [NavBot] Adding NavBot to the game. #3<0xa9f788c>
+L 12/27/2025 - 22:58:56: [NavBot] NavBot added to the game.
+L 12/27/2025 - 22:58:58: [NavBot] Computed offset for CControlPoint::m_iPointIndex: 1420
+L 12/27/2025 - 22:58:58: [NavBot] Adding NavBot to the game. #4<0xa9f78a0>
+L 12/27/2025 - 22:58:58: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:00:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 23:00:02: [NavBot] Adding NavBot to the game. #2<0xa9f7878>
+L 12/27/2025 - 23:00:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:05:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:10:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 23:10:02: [NavBot] Adding NavBot to the game. #2<0xa9f7878>
+L 12/27/2025 - 23:10:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:15:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:20:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 23:20:02: [NavBot] Adding NavBot to the game. #1<0xa9f7864>
+L 12/27/2025 - 23:20:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:25:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:30:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 23:30:02: [NavBot] Adding NavBot to the game. #2<0xa9f7878>
+L 12/27/2025 - 23:30:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:31:05: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 23:31:54: [mapchooser_extended.smx] Voting for next map has started.
+L 12/27/2025 - 23:32:39: [NavBot] Bot "[Spy]MoeBerg" suicided due to being stuck for too long. 3069.96 -230.757 699.308
+L 12/27/2025 - 23:33:34: [NavBot] Bot "[Spy]JohnHamilton" suicided due to being stuck for too long. 2594.03 2400.03 827.565
+L 12/27/2025 - 23:34:22: [SM] Changed map to "dod_longestday_b5"
+L 12/27/2025 - 23:34:23: -------- Mapchange to dod_longestday_b5 --------
+L 12/27/2025 - 23:34:24: [NavBot] Loaded Navigation Mesh file "/home/dodsserver/serverfiles/dod/addons/sourcemod/data/navbot/dod/dod_longestday_b5.smnav".
+L 12/27/2025 - 23:34:24: [mapchooser_extended.smx] No official map list found for dod. Consider submitting one!
+L 12/27/2025 - 23:34:26: [NavBot] Adding NavBot to the game. #2<0xa9f7878>
+L 12/27/2025 - 23:34:26: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:34:28: [NavBot] Adding NavBot to the game. #3<0xa9f788c>
+L 12/27/2025 - 23:34:28: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:34:30: [NavBot] Adding NavBot to the game. #5<0xa9f78b4>
+L 12/27/2025 - 23:34:30: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:34:32: [NavBot] Adding NavBot to the game. #6<0xa9f78c8>
+L 12/27/2025 - 23:34:32: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:35:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:40:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 23:40:02: [NavBot] Adding NavBot to the game. #2<0xa9f7878>
+L 12/27/2025 - 23:40:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:45:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/27/2025 - 23:50:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "sm_navbot_kick")
+L 12/27/2025 - 23:50:02: [NavBot] Adding NavBot to the game. #2<0xa9f7878>
+L 12/27/2025 - 23:50:02: [NavBot] NavBot added to the game.
+L 12/27/2025 - 23:54:14: [NavBot] Bot "[Spy]JuanPujolGarcÃ­a" suicided due to being stuck for too long. 2477.97 4411.88 453.292
+L 12/27/2025 - 23:55:00: [basecommands.smx] "Console<0><Console><Console>" console command (cmdline "rcbotd kickbot")
+L 12/28/2025 - 00:00:00: Log file closed.
