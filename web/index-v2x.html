@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbot StuckBot Visualiser v2.2</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --danger: #ef4444;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --border: #e2e8f0;
+            --text: #1e293b;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.5;
+        }
+
+        .header { text-align: center; margin-bottom: 2rem; }
+        .header h1 { margin-bottom: 0.5rem; color: var(--primary); }
+        .header p { color: #64748b; margin-top: 0; }
+
+        .drop-zone {
+            border: 3px dashed var(--border);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: var(--card);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            margin-bottom: 2rem;
+        }
+        .drop-zone:hover, .drop-zone.dragover {
+            border-color: var(--primary);
+            background: #eff6ff;
+        }
+
+        .file-list-container {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        .file-list-container h4 { margin-top: 0; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        
+        .file-item { 
+            font-size: 0.9rem; 
+            padding: 0.5rem; 
+            color: #475569; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .file-item:last-child { border-bottom: none; }
+        .remove-file {
+            background: none;
+            border: none;
+            color: var(--danger);
+            cursor: pointer;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .remove-file:hover { background: #fee2e2; }
+
+        .results-area { display: none; animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem; margin-bottom: 1.5rem;
+        }
+        .stat-card {
+            background: var(--card); padding: 1.5rem; border-radius: 12px;
+            text-align: center; border: 1px solid var(--border);
+        }
+        .stat-label { display: block; color: #64748b; font-size: 0.875rem; font-weight: 500; text-transform: uppercase; }
+        .stat-value { display: block; font-size: 2.25rem; font-weight: 800; color: var(--primary); }
+
+        .map-summary {
+            width: 100%; border-collapse: collapse; background: var(--card);
+            border-radius: 12px; overflow: hidden; border: 1px solid var(--border); margin-bottom: 1.5rem;
+        }
+        .map-summary th, .map-summary td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+        .map-summary th { background: #f1f5f9; font-weight: 600; color: #475569; }
+
+        .btn-group { display: flex; gap: 1rem; margin-top: 1rem; }
+        button.download-btn { background: var(--primary); color: white; flex: 2; padding: 1rem; border-radius: 8px; border: none; font-weight: bold; cursor: pointer;}
+        button.download-btn:hover { background: var(--primary-hover); }
+        .reset-btn { background: #e2e8f0; color: #475569; flex: 1; padding: 1rem; border-radius: 8px; border: none; cursor: pointer; }
+
+        #fileInput { display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Navbot StuckBot Visualiser</h1>
+        <p>Log Analysis & Aggregation • v2.2</p>
+    </div>
+
+    <div id="dropZone" class="drop-zone">
+        <p><strong>Drop SourceMod .log files here</strong></p>
+        <span style="color: #64748b;">Multiple files supported</span>
+        <input type="file" id="fileInput" accept=".log,.txt" multiple>
+    </div>
+
+    <div id="fileListContainer" class="file-list-container" style="display: none;">
+        <h4>Included Logs</h4>
+        <div id="fileItems"></div>
+    </div>
+
+    <div id="resultsArea" class="results-area">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-label">Stuck Events</span>
+                <span id="botCount" class="stat-value">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Map Count</span>
+                <span id="mapCount" class="stat-value">0</span>
+            </div>
+        </div>
+
+        <h3>Aggregated Stuck Events</h3>
+        <table class="map-summary">
+            <thead>
+                <tr><th>Map Name</th><th>Stuck Event Count</th></tr>
+            </thead>
+            <tbody id="mapTableBody"></tbody>
+        </table>
+
+        <div class="btn-group">
+            <button id="downloadBtn" class="download-btn">Download locations.txt</button>
+            <button id="resetBtn" class="reset-btn">Reset All</button>
+        </div>
+    </div>
+
+    <script>
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const fileItems = document.getElementById('fileItems');
+        const fileListContainer = document.getElementById('fileListContainer');
+        const resultsArea = document.getElementById('resultsArea');
+        const mapTableBody = document.getElementById('mapTableBody');
+        
+        let loadedFiles = [];
+
+        dropZone.addEventListener('click', () => fileInput.click());
+        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+        fileInput.addEventListener('change', (e) => handleFiles(e.target.files));
+        document.getElementById('resetBtn').addEventListener('click', () => location.reload());
+
+        async function handleFiles(files) {
+            for (let file of files) {
+                if (loadedFiles.some(f => f.name === file.name)) continue;
+
+                const text = await file.text();
+                const bots = parseLog(text);
+                
+                loadedFiles.push({ name: file.name, bots: bots });
+            }
+            updateUI();
+        }
+
+        function parseLog(rawText) {
+            const lines = rawText.split(/\r?\n/);
+            const botsFound = [];
+            let currentMap = "Unknown_Map";
+            let isMapValid = true;
+
+            const initMarkers = [
+                "CBasePlayer::PlayerRunCommand hook enabled",
+                "Loaded bot difficulty profiles",
+                "Extension fully loaded",
+                "Registered 34 natives"
+            ];
+
+            lines.forEach(line => {
+                if (line.length < 28) return;
+                const msgPos = line.indexOf(': ');
+                if (msgPos === -1) return;
+                const content = line.substring(msgPos + 2);
+
+                if (initMarkers.some(m => content.includes(m))) {
+                    isMapValid = false;
+                    return;
+                }
+
+                if (content.includes('Changed map to') || content.includes('Mapchange to')) {
+                    const mapMatch = content.match(/Mapchange to ([\w_]+)|Changed map to "([\w_]+)"/);
+                    if (mapMatch) {
+                        currentMap = mapMatch[1] || mapMatch[2];
+                        isMapValid = true;
+                    }
+                    return;
+                }
+
+                if (isMapValid && content.includes('[NavBot] Bot') && content.includes('suicided')) {
+                    const coordMatch = content.match(/suicided.* ([\-\d\.]+) ([\-\d\.]+) ([\-\d\.]+)/);
+                    if (coordMatch) {
+                        botsFound.push({ map: currentMap, x: coordMatch[1], y: coordMatch[2], z: coordMatch[3] });
+                    }
+                }
+            });
+            return botsFound;
+        }
+
+        function removeFile(index) {
+            loadedFiles.splice(index, 1);
+            updateUI();
+        }
+
+        function updateUI() {
+            if (loadedFiles.length === 0) {
+                fileListContainer.style.display = 'none';
+                resultsArea.style.display = 'none';
+                return;
+            }
+
+            fileListContainer.style.display = 'block';
+            resultsArea.style.display = 'block';
+
+            fileItems.innerHTML = loadedFiles.map((file, index) => `
+                <div class="file-item">
+                    <span>📄 ${file.name} (${file.bots.length} events)</span>
+                    <button class="remove-file" onclick="removeFile(${index})">✕ Remove</button>
+                </div>
+            `).join('');
+
+            const masterMapStats = {};
+            let totalBotCount = 0;
+
+            loadedFiles.forEach(file => {
+                file.bots.forEach(bot => {
+                    totalBotCount++;
+                    masterMapStats[bot.map] = (masterMapStats[bot.map] || 0) + 1;
+                });
+            });
+
+            const sortedMaps = Object.entries(masterMapStats).sort((a, b) => b[1] - a[1]);
+
+            mapTableBody.innerHTML = sortedMaps.map(([name, count]) => `
+                <tr>
+                    <td><code>${name}</code></td>
+                    <td><strong>${count}</strong></td>
+                </tr>
+            `).join('');
+
+            document.getElementById('botCount').textContent = totalBotCount;
+            document.getElementById('mapCount').textContent = sortedMaps.length;
+        }
+
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            let kv = '"StuckBots"\n{\n';
+            let globalIndex = 0;
+
+            loadedFiles.forEach(file => {
+                file.bots.forEach(bot => {
+                    kv += `    "${globalIndex}"\n    {\n`;
+                    kv += `        "map"    "${bot.map}"\n`;
+                    kv += `        "x"      "${bot.x}"\n`;
+                    kv += `        "y"      "${bot.y}"\n`;
+                    kv += `        "z"      "${bot.z}"\n`;
+                    kv += `    }\n`;
+                    globalIndex++;
+                });
+            });
+            kv += '}\n';
+
+            const blob = new Blob([kv], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'locations.txt';
+            link.click();
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>
