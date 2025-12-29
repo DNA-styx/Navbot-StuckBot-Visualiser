@@ -1,0 +1,50 @@
+#Navbot StuckBot Visualiser
+
+HTML script and SourceMod Plugin to parse SourceMod logs for Navbot 'stuckbot' events, agragate into one file and display them in game to assit with fixing non-optional waypointing.
+
+Vibed together over the course of a day with LLMs, more a usable proof of concept for those with better SourcePawn skills.
+
+
+Requirments:
+- Day of Defeat:Source server running NavBot and  Mapchooser/Mapchooser Extended
+- SourceMod logs containing stuckbot events. e.g. ``L 12/28/2025 - 00:06:06: [NavBot] Bot "Jack" suicided due to being stuck for too long. 2477.97 4411.88 453.292``
+- Windows listen server to fixing navmesh
+
+Steps:
+- Download and open web\index-v2x.html from this repo locally on your computer
+- Download sourcemod files from game server ( addons\sourcemod\logs\LYYYYMMDD.log)
+- Drag and drop the log files to the top of the web page
+- Click the 'Download locations.txt' button and save it to addons\sourcemod\data\navbot-stuckbot-visualiser\locations.txt
+- Download (or build) navbot-stuckbot-visualiser.smx and place in addons\sourcemod\plugins
+- Check game console for confirmation that locations.txt as been loaded, numbner of stuckbot events and their locaitons.
+- Use NOCLIP to go to the location, or use setpos along with the cordinates from the console
+
+Notes:
+- 'Unkown_Map' is normamly the map that your server starts with. SourceMod/Mapchooser doesn't write that to the log file, so the parser looks for logs that indicate a server restart, and ignores any stuckbot events until the next confirmed map change log entry.
+
+To-do:
+- Test compabibility with other games/maps
+- Read directly from the log files (?)
+- Build menus to teleport to stuckbot points
+- Toggle points on and off
+- Make points beacon to help locate.
+- Remove duplicate points within X of each other
+
+
+<img width="848" height="588" alt="image" src="https://github.com/user-attachments/assets/72794b8e-6cc8-4453-86e6-c1f3cbbaabea" />
+
+<img width="1303" height="468" alt="image" src="https://github.com/user-attachments/assets/78168a32-3a4d-41d6-955d-39d6c8436945" />
+
+<img width="1053" height="442" alt="image" src="https://github.com/user-attachments/assets/3f02ce54-9cf1-4deb-bd6e-adff9c8c92fc" />
+
+<img width="958" height="1676" alt="image" src="https://github.com/user-attachments/assets/17be5490-9cc1-417e-95e1-358bcef06a17" />
+
+<img width="827" height="698" alt="image" src="https://github.com/user-attachments/assets/2022662a-86f8-45e4-8418-c659539d62b3" />
+
+<img width="1382" height="886" alt="image" src="https://github.com/user-attachments/assets/698759fd-e339-4335-b515-29b69755d781" />
+
+<img width="863" height="729" alt="image" src="https://github.com/user-attachments/assets/42e7f269-18ad-4012-85b3-0a8924240757" />
+
+<img width="951" height="757" alt="image" src="https://github.com/user-attachments/assets/23ee69b3-b95f-45bb-9e1a-a43591a21d3c" />
+
+<img width="1103" height="700" alt="image" src="https://github.com/user-attachments/assets/24280591-0b79-4960-9a55-9098ad63085e" />
