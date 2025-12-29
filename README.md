@@ -1,35 +1,38 @@
-#Navbot StuckBot Visualiser
+# Navbot StuckBot Visualiser
 
-HTML script and SourceMod Plugin to parse SourceMod logs for Navbot 'stuckbot' events, agragate into one file and display them in game to assit with fixing non-optional waypointing.
+HTML script and SourceMod Plugin to parse SourceMod logs for Navbot 'stuckbot' events, aggregate into one file and display them in game to assist with fixing non-optional waypointing.
 
-Vibed together over the course of a day with LLMs, more a usable proof of concept for those with better SourcePawn skills.
+Vibed together over the course of a day with LLMs, more a usable proof of concept.
 
-
-Requirments:
-- Day of Defeat:Source server running NavBot and  Mapchooser/Mapchooser Extended
-- SourceMod logs containing stuckbot events. e.g. ``L 12/28/2025 - 00:06:06: [NavBot] Bot "Jack" suicided due to being stuck for too long. 2477.97 4411.88 453.292``
-- Windows listen server to fixing navmesh
+Requirements/Created with:
+- Day of Defeat:Source server running NavBot and Mapchooser/Mapchooser Extended
+- SourceMod logs containing 'stuckbot' events. e.g. ``L 12/28/2025 - 00:06:06: [NavBot] Bot "Jack" suicided due to being stuck for too long. 2477.97 4411.88 453.292``
+- Windows listen server to fixing Navmesh
 
 Steps:
 - Download and open web\index-v2x.html from this repo locally on your computer
-- Download sourcemod files from game server ( addons\sourcemod\logs\LYYYYMMDD.log)
+- Download SourceMod log files from game server ( addons\sourcemod\logs\LYYYYMMDD.log)
 - Drag and drop the log files to the top of the web page
 - Click the 'Download locations.txt' button and save it to addons\sourcemod\data\navbot-stuckbot-visualiser\locations.txt
 - Download (or build) navbot-stuckbot-visualiser.smx and place in addons\sourcemod\plugins
-- Check game console for confirmation that locations.txt as been loaded, numbner of stuckbot events and their locaitons.
-- Use NOCLIP to go to the location, or use setpos along with the cordinates from the console
+- Check game console for confirmation that locations.txt as been loaded, number of 'stuckbot' events and their locations.
+- Use ``NOCLIP`` to go to the location, or use ``setpos X Y Z`` along with the coordinates from the console
 
 Notes:
-- 'Unkown_Map' is normamly the map that your server starts with. SourceMod/Mapchooser doesn't write that to the log file, so the parser looks for logs that indicate a server restart, and ignores any stuckbot events until the next confirmed map change log entry.
+- 'Unknown_Map' is normally the map that your server starts with. SourceMod/Mapchooser doesn't write that to the log file, so the parser looks for logs that indicate a server restart, and ignores any 'stuckbot' events until the next confirmed map change log entry.
 
 To-do:
-- Test compabibility with other games/maps
+- Test compatibility with other games/maps
 - Read directly from the log files (?)
-- Build menus to teleport to stuckbot points
+- Build menus to teleport to 'stuckbot' points
 - Toggle points on and off
 - Make points beacon to help locate.
 - Remove duplicate points within X of each other
 
+Links:
+- Navbot https://github.com/caxanga334/NavBot
+
+Images
 
 <img width="848" height="588" alt="image" src="https://github.com/user-attachments/assets/72794b8e-6cc8-4453-86e6-c1f3cbbaabea" />
 
