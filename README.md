@@ -1,6 +1,6 @@
 # Navbot StuckBot Visualiser
 
-HTML script and SourceMod Plugin to parse SourceMod logs for Navbot 'stuckbot' events, aggregate into one file and display them in game to assist with fixing non-optional waypointing.
+HTML script and SourceMod Plugin used to parse Day of Defeat:Source SourceMod logs for Navbot 'stuckbot' events, aggregate them into one file and display them in game to assist with finding poor waypointing.
 
 Vibed together over the course of a day with LLMs, more a usable proof of concept. Tested with up to 18 logs, 1800 stuck events and 16 maps.
 
@@ -11,7 +11,7 @@ Requirements/Created with:
 
 Steps:
 - Download and open web\index-v2x.html from this repo locally on your computer
-- Download SourceMod log files from game server ( addons\sourcemod\logs\LYYYYMMDD.log)
+- Download the SourceMod log files from your game server ( addons\sourcemod\logs\LYYYYMMDD.log) to your computer 
 - Drag and drop the log files to the top of the web page
 - Click the 'Download locations.txt' button and save it to addons\sourcemod\data\navbot-stuckbot-visualiser\locations.txt
 - Download (or build) navbot-stuckbot-visualiser.smx and place in addons\sourcemod\plugins
@@ -49,7 +49,5 @@ Images
 <img width="1382" height="886" alt="image" src="https://github.com/user-attachments/assets/698759fd-e339-4335-b515-29b69755d781" />
 
 <img width="863" height="729" alt="image" src="https://github.com/user-attachments/assets/42e7f269-18ad-4012-85b3-0a8924240757" />
-
-<img width="951" height="757" alt="image" src="https://github.com/user-attachments/assets/23ee69b3-b95f-45bb-9e1a-a43591a21d3c" />
 
 <img width="1103" height="700" alt="image" src="https://github.com/user-attachments/assets/24280591-0b79-4960-9a55-9098ad63085e" />
