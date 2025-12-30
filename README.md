@@ -11,6 +11,7 @@ Requirements/Created with:
 
 Steps:
 - Download and open web\index-v2x.html from this repo locally on your computer
+  - Or use this link: https://dna-styx.github.io/Navbot-StuckBot-Visualiser/
 - Download the SourceMod log files from your game server ( addons\sourcemod\logs\LYYYYMMDD.log) to your computer 
 - Drag and drop the log files to the top of the web page
 - Click the 'Download locations.txt' button and save it to addons\sourcemod\data\navbot-stuckbot-visualiser\locations.txt
