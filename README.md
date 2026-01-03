@@ -21,7 +21,7 @@ Steps:
 
 Notes:
 - 'Unknown_Map' is normally the map that your server starts with. SourceMod/Mapchooser doesn't write that to the log file, so the parser looks for logs that indicate a server restart, and ignores any 'stuckbot' events until the next confirmed map change log entry
-- Server only loads the first 256 locations
+- Plugin only loads the first 256 locations on each map
 
 To-do:
 - Test compatibility with other games/maps
