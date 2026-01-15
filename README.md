@@ -1,6 +1,6 @@
 # Navbot StuckBot Visualiser
 
-HTML script and SourceMod Plugin used to parse Day of Defeat:Source SourceMod logs for Navbot 'stuckbot' events, aggregate them into one file and display them in game to assist with finding poor waypointing.
+HTML script and SourceMod Plugin containing AI-assisted code used to parse Day of Defeat:Source SourceMod logs for Navbot 'stuckbot' events, aggregate them into one file and display them in game to assist with finding poor waypointing.
 
 Vibed together over the course of a day with LLMs, more a usable proof of concept. Tested with up to 18 logs, 1800 stuck events over 16 maps.
 
