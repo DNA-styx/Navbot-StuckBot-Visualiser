@@ -1,13 +1,13 @@
 # Navbot StuckBot Visualiser
 
-HTML script and SourceMod Plugin used to parse Day of Defeat:Source SourceMod logs for Navbot 'stuckbot' events, aggregate them into one file and display them in game to assist with finding poor waypointing.
+AI assisted HTML script and SourceMod Plugin used to parse Day of Defeat:Source SourceMod logs for Navbot 'stuckbot' events, aggregate them into one file and display them in game to assist with finding poor waypointing.
 
-Vibed together over the course of a day with LLMs, more a usable proof of concept. Tested with up to 18 logs, 1800 stuck events and 16 maps.
+Tested with up to 18 log files, 1800 stuck events over 16 maps.
 
 Requirements/Created with:
 - Day of Defeat:Source server running NavBot and Mapchooser/Mapchooser Extended
 - SourceMod logs containing 'stuckbot' events. e.g. ``L 12/28/2025 - 00:06:06: [NavBot] Bot "Jack" suicided due to being stuck for too long. 2477.97 4411.88 453.292``
-- Windows listen server to fixing Navmesh
+- Windows listen server to view/fixing Navmesh
 
 Steps:
 - Download and open web\index-v2x.html from this repo locally on your computer
@@ -21,7 +21,7 @@ Steps:
 
 Notes:
 - 'Unknown_Map' is normally the map that your server starts with. SourceMod/Mapchooser doesn't write that to the log file, so the parser looks for logs that indicate a server restart, and ignores any 'stuckbot' events until the next confirmed map change log entry
-- Server only loads the first 256 locations
+- Plugin only loads the first 256 locations on each map
 
 To-do:
 - Test compatibility with other games/maps
