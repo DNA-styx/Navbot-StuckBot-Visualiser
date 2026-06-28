@@ -1,23 +1,7 @@
 /**
- * Navbot Stuckbot Visualiser v2.24
+ * Navbot Stuckbot Visualiser v2.25
  * Caches stuck bot locations for the current map, provides an in-game menu for
  * toggling sprite markers on/off, and lists all maps with data in locations.txt.
- *
- * Notes:
- * - PrecacheModel() is called explicitly in OnMapStart(). Relying on DispatchSpawn's
- *   internal precache for a dynamically-created env_sprite was not reliable.
- * - Render settings (rendermode, renderamt, GlowProxySize, scale) are configured per
- *   game in OnPluginStart(), since the confirmed-working values differ between DoD:S
- *   and ZPS. Do not unify these without re-confirming both games render correctly -
- *   only the ZPS settings have been validated through live testing; the DoD:S
- *   settings are its last known-working configuration from before this was touched.
- * - On ZPS, CleanupMap() runs during round initialisation and destroys all dynamically
- *   created entities including sprites. round_start (confirmed not to fire in ZPS) and
- *   cleanupmap (documented but not received by SourceMod's event system) were both
- *   tested and ruled out as automatic respawn hooks. Current workaround: sprites start
- *   hidden on map load; the admin uses the menu toggle to show them after joining,
- *   by which point ZPS's cleanup has already run.
- * - OnPluginEnd() cleans up sprites on unload to prevent orphaned entities.
  */
 
 #include <sourcemod>
@@ -26,10 +10,10 @@
 public Plugin:myinfo =
 {
     name = "Navbot Stuckbot Visualiser",
-    author = "YourName",
+    author = "Claude.ai guided by DNA.styx",
     description = "Caches and displays stuck bot locations for the current map with sprite markers",
-    version = "2.24",
-    url = ""
+    version = "2.25",
+    url = "https://github.com/DNA-styx/Navbot-StuckBot-Visualiser"
 };
 
 #define MAX_STUCK_BOTS 256
@@ -257,8 +241,8 @@ public int MenuHandler_MapList(Menu menu, MenuAction action, int param1, int par
     }
     else if (action == MenuAction_Cancel)
     {
-        // Reshow unless the player deliberately pressed Exit
-        if (param2 != MenuCancel_Exit)
+        // Reshow unless the player deliberately pressed Exit or has disconnected
+        if (param2 != MenuCancel_Exit && IsClientInGame(param1))
             ShowMapListMenu(param1);
     }
     else if (action == MenuAction_End)
@@ -320,7 +304,7 @@ public int MenuHandler_Toggle(Menu menu, MenuAction action, int param1, int para
     }
     else if (action == MenuAction_Cancel)
     {
-        if (param2 != MenuCancel_Exit)
+        if (param2 != MenuCancel_Exit && IsClientInGame(param1))
             ShowToggleMenu(param1);
     }
     else if (action == MenuAction_End)
@@ -368,7 +352,7 @@ public int MenuHandler_ChangeLevel(Menu menu, MenuAction action, int param1, int
     }
     else if (action == MenuAction_Cancel)
     {
-        if (param2 != MenuCancel_Exit)
+        if (param2 != MenuCancel_Exit && IsClientInGame(param1))
             ShowChangeLevelMenu(param1);
     }
     else if (action == MenuAction_End)
