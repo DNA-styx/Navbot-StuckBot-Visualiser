@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbot StuckBot Visualiser v2.2</title>
+    <title>Navbot StuckBot Visualiser v2.3</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -108,7 +108,7 @@
 
     <div class="header">
         <h1>Navbot StuckBot Visualiser</h1>
-        <p>Log Analysis & Aggregation • v2.2</p>
+        <p>Log Analysis & Aggregation • v2.3</p>
     </div>
 
     <div id="dropZone" class="drop-zone">
@@ -129,17 +129,29 @@
                 <span id="botCount" class="stat-value">0</span>
             </div>
             <div class="stat-card">
+                <span class="stat-label">Drown Events</span>
+                <span id="drownCount" class="stat-value">0</span>
+            </div>
+            <div class="stat-card">
                 <span class="stat-label">Map Count</span>
                 <span id="mapCount" class="stat-value">0</span>
             </div>
         </div>
 
-        <h3>Aggregated Stuck Events</h3>
+        <h3>Stuck Events by Map</h3>
         <table class="map-summary">
             <thead>
                 <tr><th>Map Name</th><th>Stuck Event Count</th></tr>
             </thead>
             <tbody id="mapTableBody"></tbody>
+        </table>
+
+        <h3>Drown Events by Map</h3>
+        <table class="map-summary">
+            <thead>
+                <tr><th>Map Name</th><th>Drown Event Count</th></tr>
+            </thead>
+            <tbody id="drownTableBody"></tbody>
         </table>
 
         <div class="btn-group">
@@ -217,7 +229,14 @@
                 if (isMapValid && content.includes('[NavBot] Bot') && content.includes('suicided')) {
                     const coordMatch = content.match(/suicided.* ([\-\d\.]+) ([\-\d\.]+) ([\-\d\.]+)/);
                     if (coordMatch) {
-                        botsFound.push({ map: currentMap, x: coordMatch[1], y: coordMatch[2], z: coordMatch[3] });
+                        botsFound.push({ map: currentMap, x: coordMatch[1], y: coordMatch[2], z: coordMatch[3], type: 'stuck' });
+                    }
+                }
+
+                if (isMapValid && content.includes('[ZPS-Drown] Survivor') && content.includes('drowned')) {
+                    const coordMatch = content.match(/drowned\. ([\-\d\.]+) ([\-\d\.]+) ([\-\d\.]+)/);
+                    if (coordMatch) {
+                        botsFound.push({ map: currentMap, x: coordMatch[1], y: coordMatch[2], z: coordMatch[3], type: 'drown' });
                     }
                 }
             });
@@ -241,32 +260,51 @@
 
             fileItems.innerHTML = loadedFiles.map((file, index) => `
                 <div class="file-item">
-                    <span>📄 ${file.name} (${file.bots.length} events)</span>
+                    <span>📄 ${file.name} (${file.bots.filter(b => b.type !== 'drown').length} stuck, ${file.bots.filter(b => b.type === 'drown').length} drown)</span>
                     <button class="remove-file" onclick="removeFile(${index})">✕ Remove</button>
                 </div>
             `).join('');
 
-            const masterMapStats = {};
-            let totalBotCount = 0;
+            const masterStuckStats = {};
+            const masterDrownStats = {};
+            let totalStuckCount = 0;
+            let totalDrownCount = 0;
 
             loadedFiles.forEach(file => {
                 file.bots.forEach(bot => {
-                    totalBotCount++;
-                    masterMapStats[bot.map] = (masterMapStats[bot.map] || 0) + 1;
+                    if (bot.type === 'drown') {
+                        totalDrownCount++;
+                        masterDrownStats[bot.map] = (masterDrownStats[bot.map] || 0) + 1;
+                    } else {
+                        totalStuckCount++;
+                        masterStuckStats[bot.map] = (masterStuckStats[bot.map] || 0) + 1;
+                    }
                 });
             });
 
-            const sortedMaps = Object.entries(masterMapStats).sort((a, b) => b[1] - a[1]);
+            const allMaps = new Set([...Object.keys(masterStuckStats), ...Object.keys(masterDrownStats)]);
+            const sortedStuckMaps = Object.entries(masterStuckStats).sort((a, b) => b[1] - a[1]);
+            const sortedDrownMaps = Object.entries(masterDrownStats).sort((a, b) => b[1] - a[1]);
 
-            mapTableBody.innerHTML = sortedMaps.map(([name, count]) => `
-                <tr>
-                    <td><code>${name}</code></td>
-                    <td><strong>${count}</strong></td>
-                </tr>
-            `).join('');
+            mapTableBody.innerHTML = sortedStuckMaps.length
+                ? sortedStuckMaps.map(([name, count]) => `
+                    <tr>
+                        <td><code>${name}</code></td>
+                        <td><strong>${count}</strong></td>
+                    </tr>`).join('')
+                : '<tr><td colspan="2" style="color:#94a3b8">No stuck events found</td></tr>';
 
-            document.getElementById('botCount').textContent = totalBotCount;
-            document.getElementById('mapCount').textContent = sortedMaps.length;
+            document.getElementById('drownTableBody').innerHTML = sortedDrownMaps.length
+                ? sortedDrownMaps.map(([name, count]) => `
+                    <tr>
+                        <td><code>${name}</code></td>
+                        <td><strong>${count}</strong></td>
+                    </tr>`).join('')
+                : '<tr><td colspan="2" style="color:#94a3b8">No drown events found</td></tr>';
+
+            document.getElementById('botCount').textContent = totalStuckCount;
+            document.getElementById('drownCount').textContent = totalDrownCount;
+            document.getElementById('mapCount').textContent = allMaps.size;
         }
 
         document.getElementById('downloadBtn').addEventListener('click', () => {
@@ -280,6 +318,7 @@
                     kv += `        "x"      "${bot.x}"\n`;
                     kv += `        "y"      "${bot.y}"\n`;
                     kv += `        "z"      "${bot.z}"\n`;
+                    kv += `        "type"   "${bot.type || 'stuck'}"\n`;
                     kv += `    }\n`;
                     globalIndex++;
                 });
