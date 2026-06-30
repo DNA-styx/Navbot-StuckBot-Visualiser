@@ -1,7 +1,17 @@
 /**
- * Navbot Stuckbot Visualiser v2.25
+ * Navbot Stuckbot Visualiser v2.26
  * Caches stuck bot locations for the current map, provides an in-game menu for
  * toggling sprite markers on/off, and lists all maps with data in locations.txt.
+ *
+ * v2.26 - Fixed a menu interrupt loop: opening a new menu from inside another
+ *         menu's own Select callback interrupts the menu still being handled,
+ *         firing Cancel(Interrupt) on it. The Cancel handlers were reshowing
+ *         themselves on any non-Exit reason, which re-interrupted the menu just
+ *         opened, looping until SourcePawn's call depth limit was hit. Removed
+ *         all reshow-on-cancel behaviour - every redisplay in this plugin is now
+ *         explicit (Back buttons show a different menu directly; the toggle
+ *         action's self-reshow goes through a 0.1s deferred timer so the
+ *         original menu fully closes first).
  */
 
 #include <sourcemod>
@@ -12,7 +22,7 @@ public Plugin:myinfo =
     name = "Navbot Stuckbot Visualiser",
     author = "Claude.ai guided by DNA.styx",
     description = "Caches and displays stuck bot locations for the current map with sprite markers",
-    version = "2.25",
+    version = "2.26",
     url = "https://github.com/DNA-styx/Navbot-StuckBot-Visualiser"
 };
 
@@ -241,9 +251,10 @@ public int MenuHandler_MapList(Menu menu, MenuAction action, int param1, int par
     }
     else if (action == MenuAction_Cancel)
     {
-        // Reshow unless the player deliberately pressed Exit or has disconnected
-        if (param2 != MenuCancel_Exit && IsClientInGame(param1))
-            ShowMapListMenu(param1);
+        // No reshow here: Interrupt fires whenever a different menu (toggle,
+        // changelevel) is opened from this menu's own Select handler, and
+        // reshowing on that would re-interrupt the menu just opened, looping.
+        // Exit/Disconnect also need no action - nothing to clean up here.
     }
     else if (action == MenuAction_End)
     {
@@ -254,6 +265,24 @@ public int MenuHandler_MapList(Menu menu, MenuAction action, int param1, int par
 }
 
 // ─── Toggle menu (current map) ────────────────────────────────────────────────
+
+void ShowToggleMenuDeferred(int client)
+{
+    // Calling ShowToggleMenu() synchronously from inside this same menu's own
+    // Select callback interrupts the menu still being processed, which causes
+    // a Cancel(Interrupt) -> reshow -> interrupt loop. Deferring by one short
+    // timer lets the current menu close out properly first.
+    int userId = GetClientUserId(client);
+    CreateTimer(0.1, Timer_ShowToggleMenu, userId, TIMER_FLAG_NO_MAPCHANGE);
+}
+
+public Action Timer_ShowToggleMenu(Handle timer, any userId)
+{
+    int client = GetClientOfUserId(userId);
+    if (client != 0 && IsClientInGame(client))
+        ShowToggleMenu(client);
+    return Plugin_Stop;
+}
 
 void ShowToggleMenu(int client)
 {
@@ -295,7 +324,7 @@ public int MenuHandler_Toggle(Menu menu, MenuAction action, int param1, int para
                 SpawnSprites();
                 g_SpritesVisible = true;
             }
-            ShowToggleMenu(param1);
+            ShowToggleMenuDeferred(param1);
         }
         else if (StrEqual(info, "back"))
         {
@@ -304,8 +333,9 @@ public int MenuHandler_Toggle(Menu menu, MenuAction action, int param1, int para
     }
     else if (action == MenuAction_Cancel)
     {
-        if (param2 != MenuCancel_Exit && IsClientInGame(param1))
-            ShowToggleMenu(param1);
+        // No reshow here: the deferred timer (ShowToggleMenuDeferred) handles
+        // redisplay after a toggle selection. "Back" opens a different menu
+        // directly, which also fires Interrupt here and needs no action.
     }
     else if (action == MenuAction_End)
     {
@@ -352,8 +382,8 @@ public int MenuHandler_ChangeLevel(Menu menu, MenuAction action, int param1, int
     }
     else if (action == MenuAction_Cancel)
     {
-        if (param2 != MenuCancel_Exit && IsClientInGame(param1))
-            ShowChangeLevelMenu(param1);
+        // No reshow here: "Back" opens the map list directly, which fires
+        // Interrupt on this menu and needs no action.
     }
     else if (action == MenuAction_End)
     {
