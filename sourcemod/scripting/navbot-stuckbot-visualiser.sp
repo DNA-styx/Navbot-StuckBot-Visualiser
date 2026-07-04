@@ -1,28 +1,18 @@
 /**
- * Navbot Stuckbot Visualiser v2.26
+ * Navbot Stuckbot Visualiser v2.27
  * Caches stuck bot locations for the current map, provides an in-game menu for
- * toggling sprite markers on/off, and lists all maps with data in locations.txt.
- *
- * v2.26 - Fixed a menu interrupt loop: opening a new menu from inside another
- *         menu's own Select callback interrupts the menu still being handled,
- *         firing Cancel(Interrupt) on it. The Cancel handlers were reshowing
- *         themselves on any non-Exit reason, which re-interrupted the menu just
- *         opened, looping until SourcePawn's call depth limit was hit. Removed
- *         all reshow-on-cancel behaviour - every redisplay in this plugin is now
- *         explicit (Back buttons show a different menu directly; the toggle
- *         action's self-reshow goes through a 0.1s deferred timer so the
- *         original menu fully closes first).
+ * toggling sprite markers on/off, and lists all maps with data in the logs directory.
  */
 
 #include <sourcemod>
 #include <sdktools>
 
-public Plugin:myinfo =
+public Plugin myinfo =
 {
     name = "Navbot Stuckbot Visualiser",
     author = "Claude.ai guided by DNA.styx",
-    description = "Caches and displays stuck bot locations for the current map with sprite markers",
-    version = "2.26",
+    description = "Displays sprite markers at stuck bot locations",
+    version = "3.00",
     url = "https://github.com/DNA-styx/Navbot-StuckBot-Visualiser"
 };
 
@@ -37,9 +27,8 @@ int   g_StuckCount = 0;
 int  g_SpriteEntities[MAX_STUCK_BOTS];
 bool g_SpritesVisible = false;
 
-// All maps present in locations.txt (built on each map load)
+// All maps found in the logs directory (built on each map load)
 ArrayList g_MapNames;
-ArrayList g_MapCounts;
 
 char g_CurrentMap[64];
 char g_SelectedMap[64]; // holds map name during changelevel confirmation
@@ -55,8 +44,7 @@ char g_Scale[8];
 
 public void OnPluginStart()
 {
-    g_MapNames  = new ArrayList(ByteCountToCells(64));
-    g_MapCounts = new ArrayList();
+    g_MapNames = new ArrayList(ByteCountToCells(64));
 
     char gameFolder[32];
     GetGameFolderName(gameFolder, sizeof(gameFolder));
@@ -100,64 +88,162 @@ public void OnMapStart()
     g_StuckCount     = 0;
     g_SpritesVisible = false;
     g_MapNames.Clear();
-    g_MapCounts.Clear();
 
     GetCurrentMap(g_CurrentMap, sizeof(g_CurrentMap));
 
     int spriteIndex = PrecacheModel(g_SpriteModel, true);
     PrintToServer("[Navbot Stuckbot Visualiser] Map started. Precached '%s' (index %d).", g_SpriteModel, spriteIndex);
 
-    char path[PLATFORM_MAX_PATH];
-    BuildPath(Path_SM, path, sizeof(path), "data/navbot-stuckbot-visualiser/locations.txt");
+    ScanLogFiles();
 
-    if (!FileExists(path))
-    {
-        PrintToServer("[Navbot Stuckbot Visualiser] File not found: %s", path);
-        return;
-    }
-
-    Handle kv = CreateKeyValues("StuckBots");
-    FileToKeyValues(kv, path);
-
-    if (!KvGotoFirstSubKey(kv))
-    {
-        PrintToServer("[Navbot Stuckbot Visualiser] No entries found in locations.txt.");
-        CloseHandle(kv);
-        return;
-    }
-
-    do
-    {
-        char botMap[64];
-        KvGetString(kv, "map", botMap, sizeof(botMap));
-
-        // Track all unique maps and their location counts
-        int mapIdx = g_MapNames.FindString(botMap);
-        if (mapIdx == -1)
-        {
-            g_MapNames.PushString(botMap);
-            g_MapCounts.Push(1);
-        }
-        else
-        {
-            g_MapCounts.Set(mapIdx, g_MapCounts.Get(mapIdx) + 1);
-        }
-
-        // Store coordinates for the current map
-        if (StrEqual(botMap, g_CurrentMap) && g_StuckCount < MAX_STUCK_BOTS)
-        {
-            g_StuckX[g_StuckCount] = KvGetFloat(kv, "x", 0.0);
-            g_StuckY[g_StuckCount] = KvGetFloat(kv, "y", 0.0);
-            g_StuckZ[g_StuckCount] = KvGetFloat(kv, "z", 0.0);
-            g_StuckCount++;
-        }
-    }
-    while (KvGotoNextKey(kv));
-
-    CloseHandle(kv);
-
-    PrintToServer("[Navbot Stuckbot Visualiser] Loaded %d map(s) from locations.txt. Current map '%s' has %d stuck location(s).",
+    PrintToServer("[Navbot Stuckbot Visualiser] Found %d map(s) in logs. Current map '%s' has %d stuck location(s).",
         g_MapNames.Length, g_CurrentMap, g_StuckCount);
+}
+
+// ─── Log file scanning and parsing ───────────────────────────────────────────
+
+// Returns true and extracts mapName and dateStr from a filename of the form
+// stucklog_MAPNAME_YYYYMMDD.log. Date is 8 digits (YYYYMMDD).
+bool ExtractMapAndDate(const char[] filename, char[] mapOut, int mapSize, char[] dateOut, int dateSize)
+{
+    // Must start with "stucklog_"
+    if (strncmp(filename, "stucklog_", 9) != 0)
+        return false;
+
+    // Must end with ".log"
+    int fnLen = strlen(filename);
+    if (fnLen < 14 || !StrEqual(filename[fnLen - 4], ".log"))
+        return false;
+
+    // Strip prefix and suffix: work = MAPNAME_YYYYMMDD
+    char work[256];
+    strcopy(work, sizeof(work), filename[9]);
+    int workLen = strlen(work) - 4;
+    work[workLen] = '\0'; // remove ".log"
+
+    // Last 8 chars must be digits (YYYYMMDD), preceded by '_'
+    if (workLen < 10)
+        return false;
+
+    if (work[workLen - 9] != '_')
+        return false;
+
+    for (int i = workLen - 8; i < workLen; i++)
+    {
+        if (work[i] < '0' || work[i] > '9')
+            return false;
+    }
+
+    // Extract date and map name
+    strcopy(dateOut, dateSize, work[workLen - 8]);
+    work[workLen - 9] = '\0';
+    strcopy(mapOut, mapSize, work);
+
+    return true;
+}
+
+void ParseLogFile(const char[] filepath)
+{
+    File f = OpenFile(filepath, "r");
+    if (f == null)
+    {
+        PrintToServer("[Navbot Stuckbot Visualiser] Could not open log file: %s", filepath);
+        return;
+    }
+
+    char line[512];
+    while (f.ReadLine(line, sizeof(line)))
+    {
+        // Find " at <" — coordinates follow immediately after the opening <
+        int atPos = StrContains(line, " at <");
+        if (atPos == -1)
+            continue;
+
+        int startPos = atPos + 5; // skip " at <"
+        int endOffset = StrContains(line[startPos], ">");
+        if (endOffset == -1)
+            continue;
+
+        char coords[64];
+        strcopy(coords, sizeof(coords), line[startPos]);
+        coords[endOffset] = '\0';
+
+        // coords is now "X Y Z"
+        char parts[3][32];
+        if (ExplodeString(coords, " ", parts, 3, 32) < 3)
+            continue;
+
+        if (g_StuckCount >= MAX_STUCK_BOTS)
+        {
+            PrintToServer("[Navbot Stuckbot Visualiser] Maximum stuck bot limit (%d) reached.", MAX_STUCK_BOTS);
+            break;
+        }
+
+        g_StuckX[g_StuckCount] = StringToFloat(parts[0]);
+        g_StuckY[g_StuckCount] = StringToFloat(parts[1]);
+        g_StuckZ[g_StuckCount] = StringToFloat(parts[2]);
+        g_StuckCount++;
+    }
+
+    delete f;
+}
+
+void ScanLogFiles()
+{
+    char logsDir[PLATFORM_MAX_PATH];
+    BuildPath(Path_SM, logsDir, sizeof(logsDir), "logs");
+
+    DirectoryListing dir = OpenDirectory(logsDir);
+    if (dir == null)
+    {
+        PrintToServer("[Navbot Stuckbot Visualiser] Could not open logs directory: %s", logsDir);
+        return;
+    }
+
+    char bestFile[PLATFORM_MAX_PATH]; // most recent log file for current map
+    char bestDate[16];                // YYYYMMDD of the best file found so far
+    bestFile[0] = '\0';
+    bestDate[0] = '\0';
+
+    char filename[256];
+    FileType ft;
+
+    while (dir.GetNext(filename, sizeof(filename), ft))
+    {
+        if (ft != FileType_File)
+            continue;
+
+        char mapName[64];
+        char dateStr[16];
+        if (!ExtractMapAndDate(filename, mapName, sizeof(mapName), dateStr, sizeof(dateStr)))
+            continue;
+
+        // Add to the map list if not already present
+        if (g_MapNames.FindString(mapName) == -1)
+            g_MapNames.PushString(mapName);
+
+        // Track the most recent file for the current map
+        if (StrEqual(mapName, g_CurrentMap, false))
+        {
+            if (strcmp(dateStr, bestDate) > 0)
+            {
+                strcopy(bestDate, sizeof(bestDate), dateStr);
+                Format(bestFile, sizeof(bestFile), "%s/%s", logsDir, filename);
+            }
+        }
+    }
+
+    delete dir;
+
+    if (bestFile[0] != '\0')
+    {
+        PrintToServer("[Navbot Stuckbot Visualiser] Parsing log file: %s", bestFile);
+        ParseLogFile(bestFile);
+    }
+    else
+    {
+        PrintToServer("[Navbot Stuckbot Visualiser] No log file found for current map '%s'.", g_CurrentMap);
+    }
 }
 
 // ─── Auto-show menu for root admins ──────────────────────────────────────────
@@ -208,7 +294,7 @@ void ShowMapListMenu(int client)
 
     if (g_MapNames.Length == 0)
     {
-        menu.AddItem("", "No data in locations.txt", ITEMDRAW_DISABLED);
+        menu.AddItem("", "No stucklog files found", ITEMDRAW_DISABLED);
     }
     else
     {
@@ -216,16 +302,15 @@ void ShowMapListMenu(int client)
         {
             char mapName[64];
             g_MapNames.GetString(i, mapName, sizeof(mapName));
-            int count = g_MapCounts.Get(i);
 
             char mapDisplay[64];
             GetMapDisplayName(mapName, mapDisplay, sizeof(mapDisplay));
 
             char entry[128];
             if (StrEqual(mapName, g_CurrentMap, false))
-                Format(entry, sizeof(entry), "[current] %s - %d pts", mapDisplay, count);
+                Format(entry, sizeof(entry), "[current] %s - %d pts", mapDisplay, g_StuckCount);
             else
-                Format(entry, sizeof(entry), "%s - %d pts", mapDisplay, count);
+                Format(entry, sizeof(entry), "%s", mapDisplay);
 
             menu.AddItem(mapName, entry);
         }
@@ -251,10 +336,8 @@ public int MenuHandler_MapList(Menu menu, MenuAction action, int param1, int par
     }
     else if (action == MenuAction_Cancel)
     {
-        // No reshow here: Interrupt fires whenever a different menu (toggle,
-        // changelevel) is opened from this menu's own Select handler, and
-        // reshowing on that would re-interrupt the menu just opened, looping.
-        // Exit/Disconnect also need no action - nothing to clean up here.
+        // No reshow here: Interrupt fires whenever a different menu is opened
+        // from this menu's Select handler. Exit/Disconnect need no action.
     }
     else if (action == MenuAction_End)
     {
@@ -268,10 +351,6 @@ public int MenuHandler_MapList(Menu menu, MenuAction action, int param1, int par
 
 void ShowToggleMenuDeferred(int client)
 {
-    // Calling ShowToggleMenu() synchronously from inside this same menu's own
-    // Select callback interrupts the menu still being processed, which causes
-    // a Cancel(Interrupt) -> reshow -> interrupt loop. Deferring by one short
-    // timer lets the current menu close out properly first.
     int userId = GetClientUserId(client);
     CreateTimer(0.1, Timer_ShowToggleMenu, userId, TIMER_FLAG_NO_MAPCHANGE);
 }
@@ -333,9 +412,8 @@ public int MenuHandler_Toggle(Menu menu, MenuAction action, int param1, int para
     }
     else if (action == MenuAction_Cancel)
     {
-        // No reshow here: the deferred timer (ShowToggleMenuDeferred) handles
-        // redisplay after a toggle selection. "Back" opens a different menu
-        // directly, which also fires Interrupt here and needs no action.
+        // No reshow here: the deferred timer handles redisplay after toggle.
+        // "Back" opens a different menu directly, firing Interrupt here.
     }
     else if (action == MenuAction_End)
     {
@@ -382,8 +460,7 @@ public int MenuHandler_ChangeLevel(Menu menu, MenuAction action, int param1, int
     }
     else if (action == MenuAction_Cancel)
     {
-        // No reshow here: "Back" opens the map list directly, which fires
-        // Interrupt on this menu and needs no action.
+        // No reshow here: "Back" opens the map list directly.
     }
     else if (action == MenuAction_End)
     {
