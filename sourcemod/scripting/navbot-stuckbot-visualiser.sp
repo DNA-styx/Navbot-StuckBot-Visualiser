@@ -1,9 +1,3 @@
-/**
- * Navbot Stuckbot Visualiser v2.27
- * Caches stuck bot locations for the current map, provides an in-game menu for
- * toggling sprite markers on/off, and lists all maps with data in the logs directory.
- */
-
 #include <sourcemod>
 #include <sdktools>
 
@@ -12,7 +6,7 @@ public Plugin myinfo =
     name = "Navbot Stuckbot Visualiser",
     author = "Claude.ai guided by DNA.styx",
     description = "Displays sprite markers at stuck bot locations",
-    version = "3.00",
+    version = "2.29",
     url = "https://github.com/DNA-styx/Navbot-StuckBot-Visualiser"
 };
 
@@ -151,6 +145,8 @@ void ParseLogFile(const char[] filepath)
         return;
     }
 
+    ArrayList seenAreaIds = new ArrayList();
+
     char line[512];
     while (f.ReadLine(line, sizeof(line)))
     {
@@ -173,6 +169,32 @@ void ParseLogFile(const char[] filepath)
         if (ExplodeString(coords, " ", parts, 3, 32) < 3)
             continue;
 
+        // Parse NavArea ID from "Last Known Nav Area ID <N>"
+        int areaId = -1;
+        int areaPos = StrContains(line, " Last Known Nav Area ID <");
+        if (areaPos != -1)
+        {
+            int areaStart = areaPos + 25; // skip " Last Known Nav Area ID <"
+            int areaEndOffset = StrContains(line[areaStart], ">");
+            if (areaEndOffset != -1)
+            {
+                char areaStr[16];
+                strcopy(areaStr, sizeof(areaStr), line[areaStart]);
+                areaStr[areaEndOffset] = '\0';
+                areaId = StringToInt(areaStr);
+            }
+        }
+
+        // Deduplicate by NavArea ID. Entries with areaId -1 (no known area)
+        // cannot be grouped so are always kept.
+        if (areaId != -1)
+        {
+            if (seenAreaIds.FindValue(areaId) != -1)
+                continue;
+
+            seenAreaIds.Push(areaId);
+        }
+
         if (g_StuckCount >= MAX_STUCK_BOTS)
         {
             PrintToServer("[Navbot Stuckbot Visualiser] Maximum stuck bot limit (%d) reached.", MAX_STUCK_BOTS);
@@ -185,6 +207,7 @@ void ParseLogFile(const char[] filepath)
         g_StuckCount++;
     }
 
+    delete seenAreaIds;
     delete f;
 }
 
