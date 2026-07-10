@@ -6,7 +6,7 @@ public Plugin myinfo =
     name = "Navbot Stuckbot Visualiser",
     author = "Claude.ai guided by DNA.styx",
     description = "Displays sprite markers at stuck bot locations",
-    version = "2.29",
+    version = "2.32",
     url = "https://github.com/DNA-styx/Navbot-StuckBot-Visualiser"
 };
 
@@ -25,7 +25,12 @@ bool g_SpritesVisible = false;
 ArrayList g_MapNames;
 
 char g_CurrentMap[64];
-char g_SelectedMap[64]; // holds map name during changelevel confirmation
+char g_SelectedMap[64];                      // holds map name during changelevel confirmation
+char g_CurrentLogFile[PLATFORM_MAX_PATH];    // path to the most recent log file for current map
+
+// Per-client navigation state
+int   g_CurrentIndex[MAXPLAYERS + 1];
+float g_LastTeleport[MAXPLAYERS + 1];
 
 // Per-game sprite config
 char g_SpriteModel[64];
@@ -79,8 +84,9 @@ public void OnPluginStart()
 
 public void OnMapStart()
 {
-    g_StuckCount     = 0;
-    g_SpritesVisible = false;
+    g_StuckCount          = 0;
+    g_SpritesVisible      = false;
+    g_CurrentLogFile[0]   = '\0';
     g_MapNames.Clear();
 
     GetCurrentMap(g_CurrentMap, sizeof(g_CurrentMap));
@@ -260,6 +266,7 @@ void ScanLogFiles()
 
     if (bestFile[0] != '\0')
     {
+        strcopy(g_CurrentLogFile, sizeof(g_CurrentLogFile), bestFile);
         PrintToServer("[Navbot Stuckbot Visualiser] Parsing log file: %s", bestFile);
         ParseLogFile(bestFile);
     }
@@ -402,6 +409,9 @@ void ShowToggleMenu(int client)
         Format(toggleLabel, sizeof(toggleLabel), "Show Sprites (%d locations)", g_StuckCount);
 
     menu.AddItem("toggle", toggleLabel);
+    menu.AddItem("prev",   "Previous",            g_SpritesVisible && g_StuckCount > 0 ? ITEMDRAW_DEFAULT : ITEMDRAW_DISABLED);
+    menu.AddItem("next",   "Next",                g_SpritesVisible && g_StuckCount > 0 ? ITEMDRAW_DEFAULT : ITEMDRAW_DISABLED);
+    menu.AddItem("delete", "Delete Log File",     g_CurrentLogFile[0] != '\0' ? ITEMDRAW_DEFAULT : ITEMDRAW_DISABLED);
     menu.AddItem("back",   "Back");
 
     menu.Display(client, MENU_TIME_FOREVER);
@@ -427,6 +437,41 @@ public int MenuHandler_Toggle(Menu menu, MenuAction action, int param1, int para
                 g_SpritesVisible = true;
             }
             ShowToggleMenuDeferred(param1);
+        }
+        else if (StrEqual(info, "prev") || StrEqual(info, "next"))
+        {
+            if (g_StuckCount > 0)
+            {
+                float now = GetGameTime();
+                if (now - g_LastTeleport[param1] >= 0.5)
+                {
+                    g_LastTeleport[param1] = now;
+
+                    if (StrEqual(info, "prev"))
+                    {
+                        g_CurrentIndex[param1]--;
+                        if (g_CurrentIndex[param1] < 0)
+                            g_CurrentIndex[param1] = g_StuckCount - 1;
+                    }
+                    else
+                    {
+                        g_CurrentIndex[param1]++;
+                        if (g_CurrentIndex[param1] >= g_StuckCount)
+                            g_CurrentIndex[param1] = 0;
+                    }
+
+                    float vec[3];
+                    vec[0] = g_StuckX[g_CurrentIndex[param1]];
+                    vec[1] = g_StuckY[g_CurrentIndex[param1]];
+                    vec[2] = g_StuckZ[g_CurrentIndex[param1]];
+                    TeleportEntity(param1, vec, NULL_VECTOR, NULL_VECTOR);
+                }
+            }
+            ShowToggleMenuDeferred(param1);
+        }
+        else if (StrEqual(info, "delete"))
+        {
+            ShowDeleteConfirmMenu(param1);
         }
         else if (StrEqual(info, "back"))
         {
@@ -484,6 +529,76 @@ public int MenuHandler_ChangeLevel(Menu menu, MenuAction action, int param1, int
     else if (action == MenuAction_Cancel)
     {
         // No reshow here: "Back" opens the map list directly.
+    }
+    else if (action == MenuAction_End)
+    {
+        delete menu;
+    }
+
+    return 0;
+}
+
+// ─── Delete confirm menu ──────────────────────────────────────────────────────
+
+void ShowDeleteConfirmMenu(int client)
+{
+    Menu menu = new Menu(MenuHandler_DeleteConfirm);
+
+    // Show just the filename, not the full path
+    char filename[256];
+    int slashPos = -1;
+    for (int i = strlen(g_CurrentLogFile) - 1; i >= 0; i--)
+    {
+        if (g_CurrentLogFile[i] == '/' || g_CurrentLogFile[i] == '\\')
+        {
+            slashPos = i;
+            break;
+        }
+    }
+    strcopy(filename, sizeof(filename), g_CurrentLogFile[slashPos + 1]);
+
+    menu.SetTitle("[StuckBot Visualiser]\nDelete log file?\n%s\n ", filename);
+    menu.ExitButton = true;
+
+    menu.AddItem("yes",  "Yes - Delete");
+    menu.AddItem("back", "No / Back");
+
+    menu.Display(client, MENU_TIME_FOREVER);
+}
+
+public int MenuHandler_DeleteConfirm(Menu menu, MenuAction action, int param1, int param2)
+{
+    if (action == MenuAction_Select)
+    {
+        char info[16];
+        menu.GetItem(param2, info, sizeof(info));
+
+        if (StrEqual(info, "yes"))
+        {
+            DeleteFile(g_CurrentLogFile);
+            PrintToServer("[Navbot Stuckbot Visualiser] Deleted log file: %s", g_CurrentLogFile);
+
+            // Remove current map from the map list
+            int idx = g_MapNames.FindString(g_CurrentMap);
+            if (idx != -1)
+                g_MapNames.Erase(idx);
+
+            // Clear all current map data and sprites
+            KillAllSprites();
+            g_SpritesVisible    = false;
+            g_StuckCount        = 0;
+            g_CurrentLogFile[0] = '\0';
+
+            ShowMapListMenu(param1);
+        }
+        else if (StrEqual(info, "back"))
+        {
+            ShowToggleMenu(param1);
+        }
+    }
+    else if (action == MenuAction_Cancel)
+    {
+        // No reshow: "No / Back" opens toggle menu directly.
     }
     else if (action == MenuAction_End)
     {
