@@ -6,7 +6,7 @@ public Plugin myinfo =
     name = "Navbot Stuckbot Visualiser",
     author = "Claude.ai guided by DNA.styx",
     description = "Displays sprite markers at stuck bot locations",
-    version = "2.32",
+    version = "2.36",
     url = "https://github.com/DNA-styx/Navbot-StuckBot-Visualiser"
 };
 
@@ -88,6 +88,17 @@ public void OnMapStart()
     g_SpritesVisible      = false;
     g_CurrentLogFile[0]   = '\0';
     g_MapNames.Clear();
+
+    // Reset per-client navigation state. GetGameTime() resets to near-zero on
+    // each map change, but g_LastTeleport retains values from the previous map.
+    // If stale (e.g. 150.0s) and new map time is 10.0s, the cooldown check
+    // (now - g_LastTeleport >= 0.5) returns negative and blocks all teleports
+    // until game time exceeds the stale value.
+    for (int i = 1; i <= MaxClients; i++)
+    {
+        g_CurrentIndex[i]  = 0;
+        g_LastTeleport[i]  = 0.0;
+    }
 
     GetCurrentMap(g_CurrentMap, sizeof(g_CurrentMap));
 
@@ -229,8 +240,8 @@ void ScanLogFiles()
         return;
     }
 
-    char bestFile[PLATFORM_MAX_PATH]; // most recent log file for current map
-    char bestDate[16];                // YYYYMMDD of the best file found so far
+    char bestFile[PLATFORM_MAX_PATH];
+    char bestDate[16];
     bestFile[0] = '\0';
     bestDate[0] = '\0';
 
@@ -274,6 +285,48 @@ void ScanLogFiles()
     {
         PrintToServer("[Navbot Stuckbot Visualiser] No log file found for current map '%s'.", g_CurrentMap);
     }
+}
+
+// Scans the logs directory for the most recent log file for the given map.
+// Returns true and sets fileOut if found, false if no file exists.
+bool FindBestLogFileForMap(const char[] mapName, char[] fileOut, int fileOutSize)
+{
+    char logsDir[PLATFORM_MAX_PATH];
+    BuildPath(Path_SM, logsDir, sizeof(logsDir), "logs");
+
+    DirectoryListing dir = OpenDirectory(logsDir);
+    if (dir == null)
+        return false;
+
+    char bestDate[16];
+    bestDate[0] = '\0';
+    fileOut[0]  = '\0';
+
+    char filename[256];
+    FileType ft;
+
+    while (dir.GetNext(filename, sizeof(filename), ft))
+    {
+        if (ft != FileType_File)
+            continue;
+
+        char foundMap[64];
+        char dateStr[16];
+        if (!ExtractMapAndDate(filename, foundMap, sizeof(foundMap), dateStr, sizeof(dateStr)))
+            continue;
+
+        if (!StrEqual(foundMap, mapName, false))
+            continue;
+
+        if (strcmp(dateStr, bestDate) > 0)
+        {
+            strcopy(bestDate, sizeof(bestDate), dateStr);
+            Format(fileOut, fileOutSize, "%s/%s", logsDir, filename);
+        }
+    }
+
+    delete dir;
+    return fileOut[0] != '\0';
 }
 
 // ─── Auto-show menu for root admins ──────────────────────────────────────────
@@ -399,7 +452,6 @@ void ShowToggleMenu(int client)
 
     char displayMap[64];
     GetMapDisplayName(g_CurrentMap, displayMap, sizeof(displayMap));
-    menu.SetTitle("[StuckBot Visualiser]\n%s\n ", displayMap);
     menu.ExitButton = true;
 
     char toggleLabel[64];
@@ -407,6 +459,12 @@ void ShowToggleMenu(int client)
         Format(toggleLabel, sizeof(toggleLabel), "Hide Sprites (%d locations)", g_StuckCount);
     else
         Format(toggleLabel, sizeof(toggleLabel), "Show Sprites (%d locations)", g_StuckCount);
+
+    if (g_SpritesVisible && g_StuckCount > 0)
+        menu.SetTitle("[StuckBot Visualiser]\n%s\nLocation %d of %d\n ",
+            displayMap, g_CurrentIndex[client] + 1, g_StuckCount);
+    else
+        menu.SetTitle("[StuckBot Visualiser]\n%s\n ", displayMap);
 
     menu.AddItem("toggle", toggleLabel);
     menu.AddItem("prev",   "Previous",            g_SpritesVisible && g_StuckCount > 0 ? ITEMDRAW_DEFAULT : ITEMDRAW_DISABLED);
@@ -578,18 +636,29 @@ public int MenuHandler_DeleteConfirm(Menu menu, MenuAction action, int param1, i
             DeleteFile(g_CurrentLogFile);
             PrintToServer("[Navbot Stuckbot Visualiser] Deleted log file: %s", g_CurrentLogFile);
 
-            // Remove current map from the map list
-            int idx = g_MapNames.FindString(g_CurrentMap);
-            if (idx != -1)
-                g_MapNames.Erase(idx);
-
-            // Clear all current map data and sprites
+            // Clear current map data and sprites
             KillAllSprites();
             g_SpritesVisible    = false;
             g_StuckCount        = 0;
             g_CurrentLogFile[0] = '\0';
 
-            ShowMapListMenu(param1);
+            // Rescan for the next most recent file for this map
+            char nextFile[PLATFORM_MAX_PATH];
+            if (FindBestLogFileForMap(g_CurrentMap, nextFile, sizeof(nextFile)))
+            {
+                strcopy(g_CurrentLogFile, sizeof(g_CurrentLogFile), nextFile);
+                PrintToServer("[Navbot Stuckbot Visualiser] Loading next log file: %s", nextFile);
+                ParseLogFile(nextFile);
+                ShowToggleMenu(param1);
+            }
+            else
+            {
+                // No more files for this map - remove it from the list
+                int idx = g_MapNames.FindString(g_CurrentMap);
+                if (idx != -1)
+                    g_MapNames.Erase(idx);
+                ShowMapListMenu(param1);
+            }
         }
         else if (StrEqual(info, "back"))
         {
